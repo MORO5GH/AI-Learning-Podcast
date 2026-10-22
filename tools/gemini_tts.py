@@ -16,12 +16,14 @@ def tts(dialog, out_wav):
             {"speaker":"Jan","voiceConfig":{"prebuiltVoiceConfig":{"voiceName":VM}}}]}}}}
     req=urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent",
         data=json.dumps(body).encode(),headers={"Content-Type":"application/json","x-goog-api-key":KEY})
-    for attempt in range(3):
+    import time
+    for attempt in range(8):
         try:
             d=json.load(urllib.request.urlopen(req,timeout=600)); break
         except Exception as e:
             err=e.read().decode()[:500] if hasattr(e,"read") else str(e); print("retry",attempt,err,file=sys.stderr)
             if "400" in str(e): raise SystemExit("TTS bad request")
+            time.sleep(min(60*(attempt+1),300))
     else: raise SystemExit("TTS failed")
     pcm=b"".join(base64.b64decode(p["inlineData"]["data"]) for p in d["candidates"][0]["content"]["parts"] if "inlineData" in p)
     subprocess.run(["ffmpeg","-y","-loglevel","error","-f","s16le","-ar","24000","-ac","1","-i","-",out_wav],input=pcm,check=True)
