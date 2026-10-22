@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Klöbels KI News</title>
+    <link>https://moro5gh.github.io/AI-Learning-Podcast/news/</link>
+    <language>de-de</language>
+    <description>Montags, mittwochs und freitags die wichtigsten Neuigkeiten rund um KI-Modelle und KI-Werkzeuge, mit Einordnung für die Praxis. Quellen in jeder Folgenbeschreibung.</description>
+    <itunes:author>Klöbels KI Podcast</itunes:author>
+    <itunes:image href="https://moro5gh.github.io/AI-Learning-Podcast/news/cover.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:block>Yes</itunes:block>
+
+  </channel>
+</rss>

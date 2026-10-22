@@ -29,5 +29,5 @@ Verboten: "In der heutigen Welt/Zeit", "Hand aufs Herz", Game-Changer, revolutio
 - Lies vor dem Schreiben plan/lehrplan.md (welches Thema dran ist, was schon behandelt wurde) und plan/feedback.md (Andres Wünsche, haben Vorrang).
 - Lies das Skript der direkt vorherigen Folge (scripts/folge-NNN.md) und halte dich an deren Ausblick. Frühere Inhalte nur kurz aufgreifen, nicht wiederholen.
 - Wiederkehrendes Bild aus Folge 1: der "Schreibtisch" (Kontextfenster: die KI sieht nur, was auf dem Schreibtisch liegt). Darf auftauchen, aber sparsam.
-- Ausblick am Ende: das nächste offene Thema aus dem Lehrplan (sonntags: Wochenrückblick ist ein Sonderformat, der Ausblick nennt das nächste Lehrplan-Thema).
-- Themen mit dem Hinweis "vorher recherchieren" und der Wochenrückblick: vor dem Schreiben per Websuche den aktuellen Stand prüfen. Nur belegte Fakten verwenden, keine Preise oder Versionsnummern, die du nicht gerade nachgeprüft hast.
+- Ausblick am Ende: das nächste offene Thema aus dem Lehrplan.
+- Themen mit dem Hinweis "vorher recherchieren": vor dem Schreiben per Websuche den aktuellen Stand prüfen. Nur belegte Fakten verwenden, keine Preise oder Versionsnummern, die du nicht gerade nachgeprüft hast.

@@ -1,0 +1,8 @@
+{
+  "title": "KI-Werkstatt",
+  "author": "Klöbels KI Podcast",
+  "description": "Persönlicher Lern-Podcast: jeden Tag eine Folge zu Prompting, KI-Tools und Agenten.",
+  "base_url": "https://moro5gh.github.io/AI-Learning-Podcast/",
+  "guid_prefix": "ki-werkstatt",
+  "file_prefix": "folge"
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Klöbels KI Podcast abonnieren</title>
+<title>Klöbels KI Podcasts abonnieren</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="apple-touch-icon" href="cover.jpg">
 <style>
@@ -11,8 +11,9 @@
   * { box-sizing:border-box; }
   body { margin:0; min-height:100vh; background:var(--bg); color:var(--text);
          font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-         display:flex; align-items:center; justify-content:center; padding:24px 16px; }
-  main { width:100%; max-width:420px; background:var(--card); border-radius:20px; padding:28px 22px; text-align:center; }
+         display:flex; align-items:flex-start; justify-content:center; padding:24px 16px; }
+  main { width:100%; max-width:420px; display:flex; flex-direction:column; gap:24px; }
+  .card { background:var(--card); border-radius:20px; padding:28px 22px; text-align:center; }
   img.cover { width:100%; max-width:280px; border-radius:14px; display:block; margin:0 auto 20px; }
   h1 { font-size:24px; margin:0 0 8px; }
   p { color:var(--muted); line-height:1.5; margin:0 0 22px; }
@@ -27,21 +28,36 @@
 </head>
 <body>
 <main>
-  <img class="cover" src="cover.jpg" alt="Klöbels KI Podcast">
-  <h1>Klöbels KI Podcast</h1>
-  <p>Jeden Tag eine Folge zu Prompting, KI-Tools und Agenten. Zum Abonnieren auf dem iPhone einfach antippen.</p>
-  <a class="btn" href="podcast://moro5gh.github.io/AI-Learning-Podcast/feed.xml">In Apple Podcasts abonnieren</a>
-  <div class="alt">
-    Andere Podcast-App? Diese Feed-Adresse dort unter „Per URL hinzufügen“ einfügen:
-    <code id="feed">https://moro5gh.github.io/AI-Learning-Podcast/feed.xml</code>
-    <button id="copy" type="button">Adresse kopieren</button>
-  </div>
+  <section class="card">
+    <img class="cover" src="cover.jpg" alt="KI-Werkstatt">
+    <h1>KI-Werkstatt</h1>
+    <p>Der Lern-Podcast: jeden Tag eine Folge zu Prompting, KI-Tools und Agenten.</p>
+    <a class="btn" href="podcast://moro5gh.github.io/AI-Learning-Podcast/feed.xml">In Apple Podcasts abonnieren</a>
+    <div class="alt">
+      Andere Podcast-App? Diese Feed-Adresse dort unter „Per URL hinzufügen“ einfügen:
+      <code id="feed1">https://moro5gh.github.io/AI-Learning-Podcast/feed.xml</code>
+      <button type="button" data-copy="feed1">Adresse kopieren</button>
+    </div>
+  </section>
+  <section class="card">
+    <img class="cover" src="news/cover.jpg" alt="Klöbels KI News">
+    <h1>Klöbels KI News</h1>
+    <p>Montags, mittwochs und freitags die wichtigsten Neuigkeiten rund um KI-Modelle, mit Einordnung für die Praxis.</p>
+    <a class="btn" href="podcast://moro5gh.github.io/AI-Learning-Podcast/news/feed.xml">In Apple Podcasts abonnieren</a>
+    <div class="alt">
+      Andere Podcast-App? Diese Feed-Adresse dort unter „Per URL hinzufügen“ einfügen:
+      <code id="feed2">https://moro5gh.github.io/AI-Learning-Podcast/news/feed.xml</code>
+      <button type="button" data-copy="feed2">Adresse kopieren</button>
+    </div>
+  </section>
 </main>
 <script>
-  document.getElementById('copy').addEventListener('click', function () {
-    var t = document.getElementById('feed').textContent, b = this;
-    try { navigator.clipboard.writeText(t).then(function(){ b.textContent = 'Kopiert'; }); }
-    catch (e) { b.textContent = 'Bitte manuell kopieren'; }
+  document.querySelectorAll('button[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = document.getElementById(b.getAttribute('data-copy')).textContent;
+      try { navigator.clipboard.writeText(t).then(function(){ b.textContent = 'Kopiert'; }); }
+      catch (e) { b.textContent = 'Bitte manuell kopieren'; }
+    });
   });
 </script>
 </body>

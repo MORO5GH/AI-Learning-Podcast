@@ -1,0 +1,8 @@
+{
+  "title": "Klöbels KI News",
+  "author": "Klöbels KI Podcast",
+  "description": "Montags, mittwochs und freitags die wichtigsten Neuigkeiten rund um KI-Modelle und KI-Werkzeuge, mit Einordnung für die Praxis. Quellen in jeder Folgenbeschreibung.",
+  "base_url": "https://moro5gh.github.io/AI-Learning-Podcast/news/",
+  "guid_prefix": "kloebels-ki-news",
+  "file_prefix": "ausgabe"
+}

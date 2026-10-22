@@ -3,7 +3,7 @@
 Der tägliche Task nimmt immer das erste Thema mit Status `offen`, schreibt die Folge und setzt den Status auf `erledigt (Folge N, Datum)`.
 Andre kann Themen ergänzen, umstellen oder streichen. Wünsche und Rückmeldungen stehen in `plan/feedback.md`.
 
-Sonntags gibt es statt eines Lehrplan-Themas einen "Wochenrückblick": Was hat sich in den letzten sieben Tagen bei KI-Tools getan (vorher per Websuche recherchieren, nur belegte Neuigkeiten), und was davon ist für Andre praktisch relevant.
+Jeden Tag (auch sonntags) ein Lehrplan-Thema. Aktuelle KI-Neuigkeiten gehören nicht hierher, die laufen im eigenen Podcast "Klöbels KI News" (Ordner news/).
 
 ## Themen
 
