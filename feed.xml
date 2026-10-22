@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>KI-Werkstatt</title>
+    <link>https://moro5gh.github.io/AI-Learning-Podcast/</link>
+    <language>de-de</language>
+    <description>Persönlicher Lern-Podcast: jeden Tag eine Folge zu Prompting, KI-Tools und Agenten.</description>
+    <itunes:author>KI-Werkstatt</itunes:author>
+    <itunes:image href="https://moro5gh.github.io/AI-Learning-Podcast/cover.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:block>Yes</itunes:block>
+    <item>
+      <title>Folge 1: Was im Modell passiert, wenn du tippst</title>
+      <description>Tokens, Kontextfenster, Halluzinationen, Denkmodus: Wie ein Sprachmodell arbeitet und welche fünf Prompting-Regeln daraus folgen. Übung des Tages: der Schreibtisch-Check.</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-001.mp3" length="6958208" type="audio/mpeg"/>
+      <guid isPermaLink="false">ki-werkstatt-001</guid>
+      <pubDate>Thu, 22 Oct 2026 07:00:00 +0200</pubDate>
+      <itunes:duration>00:14:29</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+    </item>
+  </channel>
+</rss>
