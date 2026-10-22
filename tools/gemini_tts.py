@@ -17,13 +17,63 @@ SPEAKERS = dict(p.split(":") for p in os.environ.get("SPEAKERS", "MIRA:Aoede,JAN
 NAMES = {k.upper(): k.capitalize() for k in SPEAKERS}  # MIRA -> Mira
 
 
+AUSSPRACHE_DATEI = os.path.join(os.path.dirname(os.path.abspath(__file__)), "aussprache.json")
+AUSSPRACHE = json.load(open(AUSSPRACHE_DATEI, encoding="utf-8")) if os.path.exists(AUSSPRACHE_DATEI) else {}
+
+
+def aussprache(text):
+    """Ersetzt Wörter, die Gemini falsch ausspricht, durch eine Schreibweise, die richtig klingt."""
+    for wort, gesprochen in AUSSPRACHE.items():
+        text = re.sub(r"\b" + re.escape(wort) + r"\b", gesprochen, text)
+    return text
+
+
+def saeubern(wav_in, wav_out):
+    """Entfernt Geminis Störgeräusche am Rand jedes Abschnitts: ein kurzes Knacken am Anfang und einen
+    lauten Rauschstoß am Ende. Schneidet bis zur ersten bzw. nach der letzten Stille und blendet weich."""
+    import wave
+    import numpy as np
+    w = wave.open(wav_in)
+    a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float64)
+    win = 240  # 10 ms
+    rms = np.array([np.sqrt(np.mean(a[i:i + win] ** 2)) for i in range(0, len(a) - win, win)])
+    still = rms < 200
+    # Anfang: erstes stilles Fenster innerhalb der ersten 200 ms
+    start = 0
+    for i in range(min(20, len(still))):
+        if still[i]:
+            start = i
+            break
+    # Ende: lauter Stoß in den letzten 400 ms -> bis zur letzten Stille davor abschneiden
+    end = len(rms)
+    tail = range(max(0, len(rms) - 40), len(rms))
+    if any(rms[i] > 6000 for i in tail):
+        for i in range(len(rms) - 1, max(0, len(rms) - 60), -1):
+            if still[i] and not any(rms[j] > 6000 for j in range(i, max(i - 5, 0), -1)):
+                end = i + 1
+                break
+    s0, s1 = start * win, end * win
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav_in, "-af",
+                    f"atrim=start_sample={s0}:end_sample={s1},afade=t=in:d=0.015,areverse,afade=t=in:d=0.03,areverse",
+                    wav_out], check=True)
+
+
 def tts(dialog, out_wav):
     parts = []
     for l in dialog.splitlines():
         sp, t = l.split(":", 1)
-        parts.append({"text": t.strip(), "speechMetadata": {"speaker": sp}})
-    voices = [{"speaker": NAMES[k.upper()], "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": v}}}
-              for k, v in SPEAKERS.items()]
+        parts.append({"text": aussprache(t.strip()), "speechMetadata": {"speaker": sp}})
+    # Reihenfolge der Stimmen = Reihenfolge des ersten Auftritts im Abschnitt. Gemini ordnet die
+    # Stimmen sonst teilweise nach Position statt nach Namen zu (Stimmen vertauscht).
+    order = []
+    for prt in parts:
+        if prt["speechMetadata"]["speaker"] not in order:
+            order.append(prt["speechMetadata"]["speaker"])
+    for k in SPEAKERS:
+        if NAMES[k.upper()] not in order:
+            order.append(NAMES[k.upper()])
+    voice_of = {NAMES[k.upper()]: v for k, v in SPEAKERS.items()}
+    voices = [{"speaker": n, "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_of[n]}}} for n in order]
     body = {"contents": [{"role": "user", "parts": parts}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"multiSpeakerVoiceConfig": {"speakerVoiceConfigs": voices}}}}
@@ -75,7 +125,8 @@ if __name__ == "__main__":
             break
         f = f"{tmp}/{i:02d}.wav"
         u = tts(c, f)
-        parts.append(f)
+        saeubern(f, f"{tmp}/{i:02d}_sauber.wav")
+        parts.append(f"{tmp}/{i:02d}_sauber.wav")
         print("chunk", i, len(c), "chars", u, file=sys.stderr)
     if not parts:
         raise SystemExit("Keine Dialogzeilen gefunden – passen die Sprechernamen zu SPEAKERS?")

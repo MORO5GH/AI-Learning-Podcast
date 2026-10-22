@@ -1,4 +1,4 @@
-# Quellen für Klöbels KI News
+# Quellen für Klöbels KI-News
 
 Diese Liste zeigt, welche Newsletter, offiziellen Anbieterseiten und deutschsprachigen Tech-Medien am 22.10.2026 per WebFetch getestet wurden, jeweils mit Übersichtsseite und einer aktuellen Einzelausgabe. Der Recherche-Task soll in erster Linie die Quellen unter „Zuverlässig abrufbar“ nutzen.
 

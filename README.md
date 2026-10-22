@@ -1,4 +1,4 @@
-# Klöbels KI Podcast & Klöbels KI News
+# Klöbels KI-Podcast & Klöbels KI-News
 
 Persönliche KI-Podcasts. Abo-Seite: https://moro5gh.github.io/AI-Learning-Podcast/
 
