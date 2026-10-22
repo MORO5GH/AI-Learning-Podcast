@@ -1,4 +1,4 @@
-# Klöbels KI News – Ausgabe 1 vom 22.10.2026
+# Klöbels KI-News – Ausgabe 1 vom 22.10.2026
 
 TOM: Zwei Sicherheitslücken in PHP. Bewertet mit neun Punkt zwei von zehn. Betroffen ist praktisch jeder Webserver, der PHP ausliefert.
 
@@ -8,7 +8,7 @@ TOM: Genau. Und gefunden wurden die Lücken mit Hilfe von KI-Modellen, von OpenA
 
 LENA: Außerdem heute: Anthropic startet Claude Duet, einen Agenten, der sich von selbst meldet. Walmart öffnet seinen Shop für KI-Einkaufsagenten. Und Google Cloud bietet jetzt die Modelle von OpenAI, Anthropic und Google unter einem Dach an.
 
-LENA: Das ist Klöbels KI News vom Donnerstag, 22. Oktober 2026. Die allererste Ausgabe. Ich bin Lena.
+LENA: Das ist Klöbels KI-News vom Donnerstag, 22. Oktober 2026. Die allererste Ausgabe. Ich bin Lena.
 
 TOM: Und ich bin Tom. Wir schauen auf die Meldungen seit Montag, also auf diese Woche bis heute.
 
@@ -120,4 +120,4 @@ LENA: Worauf sollte man in den nächsten Tagen achten?
 
 TOM: Zwei Dinge. Erstens PHP: Hoster und Shop-Anbieter melden gerade nach und nach, ob sie die Updates eingespielt haben. Da lohnt ein Blick in die Mails und Statusseiten. Zweitens Mistral. Das französische Unternehmen hat schon Anfang Oktober sein großes Modell Mistral Large vier vorgestellt. Laut Ankündigung sollen die Modellgewichte bis Ende Oktober frei veröffentlicht werden. Dann könnte man das Modell auch auf eigenen Servern in Europa betreiben.
 
-LENA: Das waren Klöbels KI News. Bis Freitag.
+LENA: Das waren Klöbels KI-News. Bis Freitag.

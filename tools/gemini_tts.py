@@ -103,6 +103,15 @@ def chunks(script, max_chars=4000):
     pat = re.compile(r"^(" + "|".join(NAMES) + r"):")
     lines = [l for l in open(script, encoding="utf-8").read().splitlines() if pat.match(l)]
     lines = [NAMES[l.split(":", 1)[0]] + ":" + l.split(":", 1)[1] for l in lines]
+    # Spricht dieselbe Person mehrmals direkt hintereinander, zu einer Zeile zusammenfassen.
+    # Gemini wechselt sonst bei jedem Beitrag die Stimme, und ab da sind die Stimmen vertauscht.
+    merged = []
+    for l in lines:
+        if merged and merged[-1].split(":", 1)[0] == l.split(":", 1)[0]:
+            merged[-1] = merged[-1] + " " + l.split(":", 1)[1].strip()
+        else:
+            merged.append(l)
+    lines = merged
     cur, n = [], 0
     for l in lines:
         if n + len(l) > max_chars and cur:
