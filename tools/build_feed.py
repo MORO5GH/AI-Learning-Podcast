@@ -27,7 +27,7 @@ feed=f"""<?xml version="1.0" encoding="UTF-8"?>
     <link>{BASE}</link>
     <language>de-de</language>
     <description>Persönlicher Lern-Podcast: jeden Tag eine Folge zu Prompting, KI-Tools und Agenten.</description>
-    <itunes:author>KI-Werkstatt</itunes:author>
+    <itunes:author>Klöbels KI Podcast</itunes:author>
     <itunes:image href="{BASE}cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
