@@ -13,6 +13,10 @@ import json, sys, base64, subprocess, urllib.request, re, os, time
 KEY = open("/root/.podcast/gemini_key").read().strip()
 TEMPO = os.environ.get("TEMPO", "1.1")
 MODEL = os.environ.get("TTS_MODEL", "gemini-3.8-flash-tts")
+# Ausweichmodelle, falls das Tageskontingent eines Modells (100 Anfragen) aufgebraucht ist.
+# Jedes Modell hat ein eigenes Kontingent; gleiche Stimmen, leicht anderer Klang.
+MODELLE = [MODEL] + [m for m in ["gemini-3.8-flash-lite-tts"] if m != MODEL]
+_aktiv = [0]  # Index des aktuell genutzten Modells (bleibt für die restlichen Abschnitte)
 SPEAKERS = dict(p.split(":") for p in os.environ.get("SPEAKERS", "MIRA:Aoede,JAN:Charon").split(","))
 NAMES = {k.upper(): k.capitalize() for k in SPEAKERS}  # MIRA -> Mira
 
@@ -77,21 +81,30 @@ def tts(dialog, out_wav):
     body = {"contents": [{"role": "user", "parts": parts}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"multiSpeakerVoiceConfig": {"speakerVoiceConfigs": voices}}}}
-    req = urllib.request.Request(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent",
-        data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": KEY})
-    for attempt in range(8):
+    attempt = 0
+    while True:
+        model = MODELLE[_aktiv[0]]
+        req = urllib.request.Request(
+            f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+            data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": KEY})
         try:
             d = json.load(urllib.request.urlopen(req, timeout=600))
             break
         except Exception as e:
-            err = e.read().decode()[:500] if hasattr(e, "read") else str(e)
-            print("retry", attempt, err, file=sys.stderr)
+            err = e.read().decode()[:800] if hasattr(e, "read") else str(e)
+            print("retry", model, attempt, err[:300], file=sys.stderr)
             if "400" in str(e):
                 raise SystemExit("TTS bad request")
-            time.sleep(min(60 * (attempt + 1), 300))
-    else:
-        raise SystemExit("TTS failed")
+            if "PerDay" in err or "per_day" in err:
+                if _aktiv[0] + 1 < len(MODELLE):
+                    _aktiv[0] += 1
+                    print("Tageskontingent erschöpft, weiter mit", MODELLE[_aktiv[0]], file=sys.stderr)
+                    continue
+                raise SystemExit("TTS failed: Tageskontingent aller Modelle erschöpft")
+            attempt += 1
+            if attempt >= 8:
+                raise SystemExit("TTS failed")
+            time.sleep(min(60 * attempt, 300))
     pcm = b"".join(base64.b64decode(p["inlineData"]["data"])
                    for p in d["candidates"][0]["content"]["parts"] if "inlineData" in p)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", "-", out_wav],

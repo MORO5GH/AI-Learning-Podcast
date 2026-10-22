@@ -6,7 +6,9 @@ LENA: Also auch Onlineshops mit WordPress, Magento oder Shopware.
 
 TOM: Genau. Und gefunden wurden die Lücken mit Hilfe von KI-Modellen, von OpenAI und von Google.
 
-LENA: Außerdem heute: Anthropic startet Claude Duet, einen Agenten, der sich von selbst meldet. Walmart öffnet seinen Shop für KI-Einkaufsagenten. Und Google Cloud bietet jetzt die Modelle von OpenAI, Anthropic und Google unter einem Dach an.
+LENA: Außerdem heute: Anthropic startet Claude Duet, einen Agenten, der sich von selbst meldet. Walmart öffnet seinen Shop für KI-Einkaufsagenten.
+
+TOM: Und Google Cloud bietet jetzt die Modelle von OpenAI, Anthropic und Google unter einem Dach an.
 
 LENA: Das ist Klöbels KI-News vom Donnerstag, 22. Oktober 2026. Die allererste Ausgabe. Ich bin Lena.
 
