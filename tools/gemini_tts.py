@@ -99,7 +99,7 @@ def tts(dialog, out_wav):
     return d.get("usageMetadata", {})
 
 
-def chunks(script, max_chars=4000):
+def chunks(script, max_chars=int(os.environ.get("CHUNK_CHARS", "2500"))):
     pat = re.compile(r"^(" + "|".join(NAMES) + r"):")
     lines = [l for l in open(script, encoding="utf-8").read().splitlines() if pat.match(l)]
     lines = [NAMES[l.split(":", 1)[0]] + ":" + l.split(":", 1)[1] for l in lines]
