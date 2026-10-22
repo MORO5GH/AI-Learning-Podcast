@@ -1,3 +1,6 @@
-# KI-Werkstatt
+# Klöbels KI Podcast & Klöbels KI News
 
-Persönlicher KI-Lern-Podcast. Feed: https://moro5gh.github.io/AI-Learning-Podcast/feed.xml
+Persönliche KI-Podcasts. Abo-Seite: https://moro5gh.github.io/AI-Learning-Podcast/
+
+- Lern-Podcast: feed.xml (täglich)
+- KI-News: news/feed.xml (Mo, Mi, Fr)

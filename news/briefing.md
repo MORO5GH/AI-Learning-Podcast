@@ -1,7 +1,7 @@
 # Briefing: Klöbels KI News – Ausgabe schreiben
 
 ## Die Sendung
-"Klöbels KI News" erscheint montags, mittwochs und freitags und fasst die wichtigsten Neuigkeiten rund um KI-Modelle und KI-Werkzeuge zusammen. Hörer ist Andre: technisch versierter Berater im E-Commerce/Digital-Marketing (Feed-Management, Tracking, Analysen, Kundenkommunikation), nutzt Claude, Zapier und geplante KI-Aufgaben täglich. Er hört unterwegs, ohne Bildschirm. Parallel hört er den Lern-Podcast "KI-Werkstatt" mit Mira und Jan; die News sind bewusst anders: knapper, sachlicher, aktueller.
+"Klöbels KI News" erscheint montags, mittwochs und freitags und fasst die wichtigsten Neuigkeiten rund um KI-Modelle und KI-Werkzeuge zusammen. Hörer ist Andre: technisch versierter Berater im E-Commerce/Digital-Marketing (Feed-Management, Tracking, Analysen, Kundenkommunikation), nutzt Claude, Zapier und geplante KI-Aufgaben täglich. Er hört unterwegs, ohne Bildschirm. Parallel hört er den Lern-Podcast "Klöbels KI Podcast" mit Mira und Jan; die News sind bewusst anders: knapper, sachlicher, aktueller.
 
 Zwei Sprecher:
 - LENA: moderiert, führt durch die Meldungen, stellt die Frage "Und was heißt das für die Praxis?".

@@ -1,7 +1,7 @@
-# Briefing: KI-Werkstatt – Skript schreiben
+# Briefing: Klöbels KI Podcast – Skript schreiben
 
 ## Die Sendung
-"KI-Werkstatt" (im Feed: Klöbels KI Podcast) ist ein persönlicher, deutschsprachiger Lern-Podcast für einen Hörer: Andre, technisch versierter Berater im E-Commerce/Digital-Marketing (Feed-Management, Tracking, Analysen, Kundenkommunikation). Er nutzt KI schon viel (Claude, Automatisierungen über Zapier, geplante Aufgaben), will aber systematisch besser werden. Er hört beim Spazierengehen, also: kein Bildschirm, nur Ohr.
+"Klöbels KI Podcast" ist ein persönlicher, deutschsprachiger Lern-Podcast für einen Hörer: Andre, technisch versierter Berater im E-Commerce/Digital-Marketing (Feed-Management, Tracking, Analysen, Kundenkommunikation). Er nutzt KI schon viel (Claude, Automatisierungen über Zapier, geplante Aufgaben), will aber systematisch besser werden. Er hört beim Spazierengehen, also: kein Bildschirm, nur Ohr.
 
 Zwei Sprecher im Dialog:
 - MIRA: führt durch die Folge, stellt die Fragen, die ein Hörer stellen würde, fasst zusammen, bringt Praxisbeispiele aus dem Arbeitsalltag.
@@ -9,11 +9,11 @@ Zwei Sprecher im Dialog:
 Beide duzen sich und den Hörer. Sie reden wie zwei Kollegen in der Kaffeeküche, nicht wie ein Lehrbuch.
 
 ## Format (zwingend)
-- Datei beginnt mit `# KI-Werkstatt – Folge N: <Titel>`, danach Leerzeile.
+- Datei beginnt mit `# Klöbels KI Podcast – Folge N: <Titel>`, danach Leerzeile.
 - Danach NUR Dialogzeilen, jede beginnt mit `MIRA: ` oder `JAN: `, zwischen den Zeilen eine Leerzeile. Keine Regieanweisungen, keine Zwischenüberschriften, kein Markdown, keine Aufzählungszeichen, keine Klammern mit Hinweisen.
 - Länge: 3.400 bis 3.700 Wörter (prüfe mit `wc -w`). Das ergibt ca. 18 Minuten Audio.
 - Einzelne Redebeiträge höchstens ca. 120 Wörter, meist kürzer. Echtes Hin und Her, Nachfragen, kurze Reaktionen ("Okay, das ist ein gutes Beispiel.").
-- Ablauf: kurze Begrüßung (Mira stellt das Thema vor, ein Satz Rückbezug auf die letzte Folge) → Hauptteil in 4–6 Abschnitten mit konkreten Beispielen → kurze mündliche Zusammenfassung der Kernpunkte (als Merksätze, die man beim Gehen behält) → "Übung für heute" (konkret, in 5–15 Minuten machbar, am selben Tag) → Ausblick auf die nächste Folge → Verabschiedung "Bis morgen in der KI-Werkstatt."
+- Ablauf: kurze Begrüßung (Mira stellt das Thema vor, ein Satz Rückbezug auf die letzte Folge) → Hauptteil in 4–6 Abschnitten mit konkreten Beispielen → kurze mündliche Zusammenfassung der Kernpunkte (als Merksätze, die man beim Gehen behält) → "Übung für heute" (konkret, in 5–15 Minuten machbar, am selben Tag) → Ausblick auf die nächste Folge → Verabschiedung "Bis morgen beim Klöbels KI Podcast."
 
 ## Für das Ohr schreiben
 - Kurze Sätze. Keine Tabellen, keine Listen mit mehr als drei Punkten am Stück, keine Zahlenkolonnen.
