@@ -4,12 +4,33 @@
     <title>Klöbels KI News</title>
     <link>https://moro5gh.github.io/AI-Learning-Podcast/news/</link>
     <language>de-de</language>
-    <description>Montags, mittwochs und freitags die wichtigsten Neuigkeiten rund um KI-Modelle und KI-Werkzeuge, mit Einordnung für die Praxis. Quellen in jeder Folgenbeschreibung.</description>
+    <description>Montags, mittwochs und freitags fassen Lena und Tom die wichtigsten Neuigkeiten rund um KI-Modelle und KI-Werkzeuge zusammen und sagen dir, was sie für deine Arbeit bedeuten. Die Quellen stehen in jeder Folgenbeschreibung. Quadratisch, praktisch, gut – komplett mit Hilfe von KI generiert.</description>
     <itunes:author>Klöbels KI Podcast</itunes:author>
     <itunes:image href="https://moro5gh.github.io/AI-Learning-Podcast/news/cover-kloebels-ki-news.jpg"/>
     <image><url>https://moro5gh.github.io/AI-Learning-Podcast/news/cover-kloebels-ki-news.jpg</url><title>Klöbels KI News</title><link>https://moro5gh.github.io/AI-Learning-Podcast/news/</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
-
+    <item>
+      <title>Ausgabe 1 vom 22.10.: PHP-Lücke von KI entdeckt, Claude Duet, Walmart öffnet sich für Einkaufsagenten</title>
+      <description>KI-Modelle finden eine kritische PHP-Lücke, die auch Onlineshops betrifft, Anthropic startet den proaktiven Agenten Claude Duet, Walmart lässt KI-Einkaufsagenten zu, Google Cloud bündelt Gemini, Claude und GPT, dazu Datenschutz bei Meta Muse und ChatGPT.
+Quellen:
+PHP2Shell, Updates und Nachlese (Borns IT-Blog): https://borncity.com/blog/2026/10/22/php2shell-php-updates-und-nachlese/
+Patch the Planet (OpenAI): https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities
+KI fand PHP-Lücke (The Decoder): https://the-decoder.de/openais-gpt-5-6-sol-und-gemini-4-argon-entdeckten-die-kritische-php-sicherheitsluecke-die-millionen-webseiten-betrifft/
+Claude Duet (Claude Release Notes): https://support.claude.com/en/articles/12138966-release-notes
+Claude Duet im Detail (9to5Mac): https://9to5mac.com/2026/10/21/anthropic-takes-on-chatgpt-dots-and-meta-muse-with-claude-duet/
+Walmart Agent Gateway (TechCrunch): https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/
+OpenAI-Modelle in Google Cloud (OpenAI): https://openai.com/index/openai-models-google-cloud
+Google Cloud mit Gemini, Claude und GPT (The Decoder): https://the-decoder.de/google-cloud-bietet-als-erster-anbieter-gemini-claude-und-openai-modelle-auf-einer-plattform-an/
+Meta Muse, geteilte Chats auffindbar (t3n): https://t3n.de/news/meta-muse-tausende-private-ki-gespraeche-waren-per-suchanfrage-auffindbar-1769151
+Gesperrte Chats in ChatGPT (ChatGPT Release Notes): https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+Kundendaten und KI (AInauten): https://www.ainauten.com/p/kundendaten-ai-datenschutz-privatemode-logicc-accenture-ai-roi-dots-grok-bot-morgen-briefing
+Copilot-Aktionen in Windows 11 entfallen (t3n): https://t3n.de/news/windows-11-copilot-feature-entfernt-1769223</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/news/episodes/ausgabe-001.mp3" length="5563705" type="audio/mpeg"/>
+      <guid isPermaLink="false">kloebels-ki-news-001</guid>
+      <pubDate>Thu, 22 Oct 2026 17:49:43 +0200</pubDate>
+      <itunes:duration>00:11:35</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+    </item>
   </channel>
 </rss>
