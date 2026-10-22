@@ -12,10 +12,13 @@ import json, sys, base64, subprocess, urllib.request, re, os, time
 
 KEY = open("/root/.podcast/gemini_key").read().strip()
 TEMPO = os.environ.get("TEMPO", "1.1")
-MODEL = os.environ.get("TTS_MODEL", "gemini-3.8-flash-tts")
+# Hauptmodell: gemini-2.5-flash-preview-tts bekommt das Gespräch als Text mit "Name: ..." je Zeile
+# und hält die Sprecherwechsel zuverlässig ein. Die 3.8-Modelle klingen etwas lebendiger, verwechseln
+# aber in längeren Abschnitten die Sprecher; sie dienen nur als Ausweich bei erschöpftem Kontingent.
+MODEL = os.environ.get("TTS_MODEL", "gemini-2.5-flash-preview-tts")
 # Ausweichmodelle, falls das Tageskontingent eines Modells (100 Anfragen) aufgebraucht ist.
 # Jedes Modell hat ein eigenes Kontingent; gleiche Stimmen, leicht anderer Klang.
-MODELLE = [MODEL] + [m for m in ["gemini-3.8-flash-lite-tts"] if m != MODEL]
+MODELLE = [MODEL] + [m for m in ["gemini-3.8-flash-tts", "gemini-3.8-flash-lite-tts"] if m != MODEL]
 _aktiv = [0]  # Index des aktuell genutzten Modells (bleibt für die restlichen Abschnitte)
 SPEAKERS = dict(p.split(":") for p in os.environ.get("SPEAKERS", "MIRA:Aoede,JAN:Charon").split(","))
 NAMES = {k.upper(): k.capitalize() for k in SPEAKERS}  # MIRA -> Mira
@@ -84,6 +87,14 @@ def tts(dialog, out_wav):
     attempt = 0
     while True:
         model = MODELLE[_aktiv[0]]
+        if model.startswith("gemini-2.5"):
+            # älteres Format: ein Textblock mit "Name: Text"-Zeilen, Namen werden nicht vorgelesen
+            namen = " und ".join(order)
+            text = f"Lies das folgende Gespräch zwischen {namen} auf Deutsch vor:\n" + "\n".join(
+                f'{p["speechMetadata"]["speaker"]}: {p["text"]}' for p in parts)
+            body = {"contents": [{"parts": [{"text": text}]}], "generationConfig": body["generationConfig"]}
+        else:
+            body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": body["generationConfig"]}
         req = urllib.request.Request(
             f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
             data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": KEY})
