@@ -1,7 +1,7 @@
 {
   "title": "KI-Werkstatt",
   "author": "Klöbels KI Podcast",
-  "description": "Persönlicher Lern-Podcast: jeden Tag eine Folge zu Prompting, KI-Tools und Agenten.",
+  "description": "Jeden Tag eine neue Folge: Mira und Jan erklären, wie du mit KI wirklich besser arbeitest. Prompting, Werkzeuge, Agenten und Automatisierung, Schritt für Schritt aufgebaut und mit einer Übung für den Tag. Recherchiert, geschrieben, gesprochen und veröffentlicht von KI. Quadratisch, praktisch, gut – komplett mit Hilfe von KI generiert.",
   "base_url": "https://moro5gh.github.io/AI-Learning-Podcast/",
   "guid_prefix": "ki-werkstatt",
   "file_prefix": "folge",
