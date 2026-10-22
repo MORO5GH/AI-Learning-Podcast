@@ -5,5 +5,26 @@
     "description": "Tokens, Kontextfenster, Halluzinationen, Denkmodus: Wie ein Sprachmodell arbeitet und welche fünf Prompting-Regeln daraus folgen. Übung des Tages: der Schreibtisch-Check.",
     "file": "episodes/folge-001.mp3",
     "date": "2026-10-22T07:00:00+02:00"
+  },
+  {
+    "nr": 2,
+    "title": "Folge 2: Der Aufbau eines richtig guten Prompts",
+    "description": "Aus einem schwachen Einzeiler wird Schritt für Schritt ein guter Prompt: Ziel, Kontext, Empfänger, Vorgaben, Beispiele, Format und die richtige Reihenfolge. Übung: einen eigenen häufigen Prompt nach den Bausteinen umbauen und beide Ergebnisse vergleichen.",
+    "file": "episodes/folge-002.mp3",
+    "date": "2026-10-22T16:48:47+02:00"
+  },
+  {
+    "nr": 3,
+    "title": "Folge 3: Beispiele, Vorlagen und die eigene Prompt-Bibliothek",
+    "description": "Warum Beispiele so stark wirken, wie man eigene Texte als Stilvorlage nutzt und Vorlagen mit Platzhaltern für wiederkehrende Aufgaben baut. Übung: die erste Vorlage für die häufigste eigene Aufgabe anlegen und testen.",
+    "file": "episodes/folge-003.mp3",
+    "date": "2026-10-22T16:49:06+02:00"
+  },
+  {
+    "nr": 4,
+    "title": "Folge 4: Nachbessern statt neu anfangen",
+    "description": "Gutes Feedback geben, wann man neu anfängt, wie die KI sich selbst prüft und was man aus Korrekturen dauerhaft macht. Übung: einen Text in drei gezielten Feedback-Runden verbessern.",
+    "file": "episodes/folge-004.mp3",
+    "date": "2026-10-22T16:49:26+02:00"
   }
 ]

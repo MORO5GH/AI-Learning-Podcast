@@ -10,6 +10,33 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>Folge 4: Nachbessern statt neu anfangen</title>
+      <description>Gutes Feedback geben, wann man neu anfängt, wie die KI sich selbst prüft und was man aus Korrekturen dauerhaft macht. Übung: einen Text in drei gezielten Feedback-Runden verbessern.</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-004.mp3" length="9034323" type="audio/mpeg"/>
+      <guid isPermaLink="false">ki-werkstatt-004</guid>
+      <pubDate>Thu, 22 Oct 2026 16:49:26 +0200</pubDate>
+      <itunes:duration>00:18:49</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+    </item>
+    <item>
+      <title>Folge 3: Beispiele, Vorlagen und die eigene Prompt-Bibliothek</title>
+      <description>Warum Beispiele so stark wirken, wie man eigene Texte als Stilvorlage nutzt und Vorlagen mit Platzhaltern für wiederkehrende Aufgaben baut. Übung: die erste Vorlage für die häufigste eigene Aufgabe anlegen und testen.</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-003.mp3" length="9077161" type="audio/mpeg"/>
+      <guid isPermaLink="false">ki-werkstatt-003</guid>
+      <pubDate>Thu, 22 Oct 2026 16:49:06 +0200</pubDate>
+      <itunes:duration>00:18:54</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+    </item>
+    <item>
+      <title>Folge 2: Der Aufbau eines richtig guten Prompts</title>
+      <description>Aus einem schwachen Einzeiler wird Schritt für Schritt ein guter Prompt: Ziel, Kontext, Empfänger, Vorgaben, Beispiele, Format und die richtige Reihenfolge. Übung: einen eigenen häufigen Prompt nach den Bausteinen umbauen und beide Ergebnisse vergleichen.</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-002.mp3" length="9097499" type="audio/mpeg"/>
+      <guid isPermaLink="false">ki-werkstatt-002</guid>
+      <pubDate>Thu, 22 Oct 2026 16:48:47 +0200</pubDate>
+      <itunes:duration>00:18:57</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+    </item>
+    <item>
       <title>Folge 1: Was im Modell passiert, wenn du tippst</title>
       <description>Tokens, Kontextfenster, Halluzinationen, Denkmodus: Wie ein Sprachmodell arbeitet und welche fünf Prompting-Regeln daraus folgen. Übung des Tages: der Schreibtisch-Check.</description>
       <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-001.mp3" length="6958208" type="audio/mpeg"/>
