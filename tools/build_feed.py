@@ -45,7 +45,8 @@ feed = f"""<?xml version="1.0" encoding="UTF-8"?>
     <language>de-de</language>
     <description>{escape(cfg['description'])}</description>
     <itunes:author>{escape(cfg['author'])}</itunes:author>
-    <itunes:image href="{BASE}cover.jpg"/>
+    <itunes:image href="{BASE}{cfg.get('cover', 'cover.jpg')}"/>
+    <image><url>{BASE}{cfg.get('cover', 'cover.jpg')}</url><title>{escape(cfg['title'])}</title><link>{BASE}</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
 {chr(10).join(items)}

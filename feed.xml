@@ -6,7 +6,8 @@
     <language>de-de</language>
     <description>Persönlicher Lern-Podcast: jeden Tag eine Folge zu Prompting, KI-Tools und Agenten.</description>
     <itunes:author>Klöbels KI Podcast</itunes:author>
-    <itunes:image href="https://moro5gh.github.io/AI-Learning-Podcast/cover.jpg"/>
+    <itunes:image href="https://moro5gh.github.io/AI-Learning-Podcast/cover-kloebels-ki-podcast.jpg"/>
+    <image><url>https://moro5gh.github.io/AI-Learning-Podcast/cover-kloebels-ki-podcast.jpg</url><title>KI-Werkstatt</title><link>https://moro5gh.github.io/AI-Learning-Podcast/</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>

@@ -6,7 +6,8 @@
     <language>de-de</language>
     <description>Montags, mittwochs und freitags die wichtigsten Neuigkeiten rund um KI-Modelle und KI-Werkzeuge, mit Einordnung für die Praxis. Quellen in jeder Folgenbeschreibung.</description>
     <itunes:author>Klöbels KI Podcast</itunes:author>
-    <itunes:image href="https://moro5gh.github.io/AI-Learning-Podcast/news/cover.jpg"/>
+    <itunes:image href="https://moro5gh.github.io/AI-Learning-Podcast/news/cover-kloebels-ki-news.jpg"/>
+    <image><url>https://moro5gh.github.io/AI-Learning-Podcast/news/cover-kloebels-ki-news.jpg</url><title>Klöbels KI News</title><link>https://moro5gh.github.io/AI-Learning-Podcast/news/</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
 
