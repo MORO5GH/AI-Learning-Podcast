@@ -1,7 +1,7 @@
 # Briefing: Klöbels KI-News – Ausgabe schreiben
 
 ## Die Sendung
-"Klöbels KI-News" erscheint montags, mittwochs und freitags und fasst die wichtigsten Neuigkeiten rund um KI-Modelle und KI-Werkzeuge zusammen. Hörer ist Andre: technisch versierter Berater im E-Commerce/Digital-Marketing (Feed-Management, Tracking, Analysen, Kundenkommunikation), nutzt Claude, Zapier und geplante KI-Aufgaben täglich. Er hört unterwegs, ohne Bildschirm. Parallel hört er den Lern-Podcast "Klöbels KI-Podcast" mit Mira und Jan; die News sind bewusst anders: knapper, sachlicher, aktueller.
+"Klöbels KI-News" erscheint montags, mittwochs und freitags und fasst die wichtigsten Neuigkeiten rund um KI-Modelle und KI-Werkzeuge zusammen. Hörer ist Andre: technisch versierter Berater im E-Commerce/Digital-Marketing (Feed-Management, Tracking, Analysen, Kundenkommunikation), nutzt Claude, Zapier und geplante KI-Aufgaben täglich. Er hört unterwegs, ohne Bildschirm. Parallel hört er dienstags, donnerstags und samstags den Lern-Podcast "Klöbels KI-Podcast" mit Mira und Jan; die News sind bewusst anders: knapper, sachlicher, aktueller.
 
 Zwei Sprecher:
 - LENA: moderiert, führt durch die Meldungen, stellt die Frage "Und was heißt das für die Praxis?".
@@ -25,7 +25,7 @@ Was in der vorherigen Ausgabe schon vorkam, nur erwähnen, wenn es eine echte Ne
 ## Format (zwingend)
 - Datei beginnt mit `# Klöbels KI-News – Ausgabe N vom TT.MM.JJJJ`, danach Leerzeile.
 - Danach NUR Dialogzeilen, jede beginnt mit `LENA: ` oder `TOM: `, zwischen den Zeilen eine Leerzeile. Nie zweimal hintereinander dieselbe Person: Sprecher immer abwechseln, sonst vertauscht die Vertonung die Stimmen. Keine Regieanweisungen, keine Überschriften, kein Markdown, keine Aufzählungszeichen.
-- Länge: 1.700 bis 2.200 Wörter (mit `wc -w` prüfen). Das ergibt 8 bis 12 Minuten.
+- Länge: 1.500 bis 1.900 Wörter (mit `wc -w` prüfen). Das ergibt bei normaler Sprechgeschwindigkeit etwa 9 bis 11 Minuten.
 - Dynamisches Intro (Cold Open), jede Ausgabe anders: Die Sendung beginnt OHNE Begrüßung direkt mit der stärksten Meldung des Berichtszeitraums, als Aufhänger in ein bis drei kurzen, lebendigen Sätzen (eine überraschende Zahl, eine zugespitzte Frage oder ein konkretes Bild aus Andres Arbeitsalltag; Tempo, kurze Sätze, gern Wechsel zwischen LENA und TOM). Danach ein schneller Themenüberblick ("Außerdem: … und …", höchstens drei Stichworte). Erst dann die Begrüßung: "Das ist Klöbels KI-News vom <Wochentag>, <Datum>." Keine wiederkehrende Standardformel für den Einstieg, nichts übertreiben, alles muss durch die Quelle gedeckt sein.
 - Danach: die Meldungen, je Meldung: was ist passiert, was ist neu daran, was bedeutet es für Andres Arbeit (konkret, z. B. "für deine Kundenmails", "für Automatisierungen über Zapier") → kurzer Ausblick, worauf man in den nächsten Tagen achten sollte (nur wenn es etwas Belegtes gibt, z. B. angekündigte Termine) → Verabschiedung "Das waren Klöbels KI-News. Bis <nächster Ausgabetag>."
 - Die Einordnung "was heißt das für dich" ist der eigentliche Wert der Sendung. Lieber weniger Meldungen mit guter Einordnung als viele Schlagzeilen.

@@ -6,12 +6,12 @@ Das Skript besteht aus Zeilen "NAME: Text". Welche Namen welche Stimme bekommen,
 steht in SPEAKERS (Umgebungsvariable), Standard: Lern-Podcast mit Mira und Jan.
   SPEAKERS="MIRA:Aoede,JAN:Charon"     (Lern-Podcast)
   SPEAKERS="LENA:Kore,TOM:Orus"         (KI-News)
-TEMPO = Abspielfaktor (Standard 1.1). Der Schlüssel liegt in /root/.podcast/gemini_key.
+TEMPO = Abspielfaktor (Standard 1.0 = normale Geschwindigkeit). Der Schlüssel liegt in /root/.podcast/gemini_key.
 """
 import json, sys, base64, subprocess, urllib.request, re, os, time
 
 KEY = open("/root/.podcast/gemini_key").read().strip()
-TEMPO = os.environ.get("TEMPO", "1.1")
+TEMPO = os.environ.get("TEMPO", "1.0")
 # Hauptmodell: gemini-2.5-flash-preview-tts bekommt das Gespräch als Text mit "Name: ..." je Zeile
 # und hält die Sprecherwechsel zuverlässig ein. Die 3.8-Modelle klingen etwas lebendiger, verwechseln
 # aber in längeren Abschnitten die Sprecher; sie dienen nur als Ausweich bei erschöpftem Kontingent.
