@@ -11,6 +11,27 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>Ausgabe 2 vom 23.10.: Agent Skills werden offen, Banken sperren KI-Agenten, Perplexity lokal auf dem Mac</title>
+      <description>Anthropic gibt den Agent-Skills-Standard an eine neutrale Stiftung, US-Banken sperren KI-Agenten aus während Meta Muse beim Einkaufen wächst, Perplexity Computer läuft lokal auf dem Mac, ChatGPT-Werbung expandiert, Google Meet übersetzt in 63 Sprachen, dazu Claude auf Google Cloud.
+Quellen:
+Agent Skills an die Agentic AI Foundation (Anthropic): https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation
+US-Banken blockieren KI-Agenten (The Decoder): https://the-decoder.de/us-grossbanken-blockieren-ki-agenten-die-sich-mit-kundendaten-unerlaubt-zugang-zu-konten-verschaffen/
+Meta Muse mit über 10 Millionen Nutzern (TechCrunch): https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/
+Perplexity Computer lokal auf dem Mac (MacRumors): https://macrumors.com/2026/10/20/perplexity-computer-local-mac
+ChatGPT-Werbung in 26 weiteren Ländern (Unite.AI): https://www.unite.ai/openai-extends-chatgpt-ads-to-89-countries-with-26-market-expansion/
+ChatGPT-Werbung, weitere Zahlen (PYMNTS): https://www.pymnts.com/news/artificial-intelligence/2026/openai-expands-chatgpt-ads-to-26-new-countries/
+ChatGPT Ads in Deutschland (sichtbarerwerden): https://sichtbarerwerden.de/ratgeber/ki-ads/chatgpt-ads-deutschland/
+Google Meet übersetzt in 63 Sprachen (Google Workspace Updates): http://workspaceupdates.googleblog.com/2026/10/real-time-speech-translation-in-google-Meet-expands-to-63-languages-with-automatic-language-detection.html
+Mistral Voxtral 3 (AI Weekly): https://aiweekly.co/fr/alerts/mistral-publie-voxtral-3-modles-vocaux-multilingues-et-sdk-agents-partir-de
+ElevenLabs Eleven Realtime (ElevenLabs): https://elevenlabs.io/realtime
+Claude auf Google Cloud (Releasebot, Anthropic-Versionshinweise): https://releasebot.io/updates/anthropic</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/news/episodes/ausgabe-002.mp3" length="4775636" type="audio/mpeg"/>
+      <guid isPermaLink="false">kloebels-ki-news-002</guid>
+      <pubDate>Fri, 23 Oct 2026 05:48:50 +0200</pubDate>
+      <itunes:duration>00:09:56</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+    </item>
+    <item>
       <title>Ausgabe 1 vom 22.10.: PHP-Lücke von KI entdeckt, Claude Duet, Walmart öffnet sich für Einkaufsagenten</title>
       <description>KI-Modelle finden eine kritische PHP-Lücke, die auch Onlineshops betrifft, Anthropic startet den proaktiven Agenten Claude Duet, Walmart lässt KI-Einkaufsagenten zu, Google Cloud bündelt Gemini, Claude und GPT, dazu Datenschutz bei Meta Muse und ChatGPT.
 Quellen:
