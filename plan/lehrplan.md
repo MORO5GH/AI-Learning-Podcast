@@ -11,7 +11,7 @@ Jeden Tag (auch sonntags) ein Lehrplan-Thema. Aktuelle KI-Neuigkeiten gehören n
 2. Der Aufbau eines richtig guten Prompts | erledigt (Folge 2, 2026-10-22)
 3. Beispiele, Vorlagen und die eigene Prompt-Bibliothek | erledigt (Folge 3, 2026-10-22)
 4. Nachbessern statt neu anfangen | erledigt (Folge 4, 2026-10-22)
-5. Projekte und dauerhafte Anweisungen richtig einrichten (Projekte pro Kunde/Thema, persönliche Einstellungen, was gehört wohin) | offen
+5. Projekte und dauerhafte Anweisungen richtig einrichten (Projekte pro Kunde/Thema, persönliche Einstellungen, was gehört wohin) | erledigt (Folge 5, 2026-10-23)
 6. Gedächtnis: was die KI über dich behält, wie man es steuert, korrigiert und löscht | offen
 7. Mit Dateien arbeiten: PDFs, Tabellen, Screenshots und Bilder hochladen und auswerten | offen
 8. Recherche mit KI: Websuche, Quellen prüfen, ausführliche Recherche-Aufträge | offen

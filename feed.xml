@@ -11,6 +11,15 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>Folge 5: Projekte und dauerhafte Anweisungen richtig einrichten</title>
+      <description>Was gehört in die persönlichen Einstellungen, was in ein Projekt pro Kunde und was in den einzelnen Chat – mit Statusnotiz, vier Bausteinen für Projektanweisungen und typischen Fehlern. Übung des Tages: ein Projekt für einen Kunden einrichten und mit einer echten Aufgabe testen.</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-005.mp3" length="7369899" type="audio/mpeg"/>
+      <guid isPermaLink="false">ki-werkstatt-005</guid>
+      <pubDate>Fri, 23 Oct 2026 05:19:48 +0200</pubDate>
+      <itunes:duration>00:15:21</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+    </item>
+    <item>
       <title>Folge 4: Nachbessern statt neu anfangen</title>
       <description>Gutes Feedback geben, wann man neu anfängt, wie die KI sich selbst prüft und was man aus Korrekturen dauerhaft macht. Übung: einen Text in drei gezielten Feedback-Runden verbessern.</description>
       <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-004.mp3" length="8364243" type="audio/mpeg"/>
