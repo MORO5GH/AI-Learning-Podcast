@@ -100,6 +100,9 @@ def tts(dialog, out_wav):
             data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": KEY})
         try:
             d = json.load(urllib.request.urlopen(req, timeout=600))
+            if not (d.get("candidates") and d["candidates"][0].get("content")):
+                grund = (d.get("candidates") or [{}])[0].get("finishReason", "unbekannt")
+                raise RuntimeError(f"Antwort ohne Audio (finishReason {grund})")
             break
         except Exception as e:
             err = e.read().decode()[:800] if hasattr(e, "read") else str(e)

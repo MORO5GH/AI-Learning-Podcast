@@ -33,5 +33,12 @@
     "description": "Was gehört in die persönlichen Einstellungen, was in ein Projekt pro Kunde und was in den einzelnen Chat – mit Statusnotiz, vier Bausteinen für Projektanweisungen und typischen Fehlern. Übung des Tages: ein Projekt für einen Kunden einrichten und mit einer echten Aufgabe testen.",
     "file": "episodes/folge-005.mp3",
     "date": "2026-10-23T05:19:48+02:00"
+  },
+  {
+    "nr": 6,
+    "title": "Folge 6: Gedächtnis – was die KI über dich behält",
+    "description": "Wie das Gedächtnis von Claude, ChatGPT und Gemini funktioniert, wo es veraltet oder zu schnell verallgemeinert und wie du es ansiehst, korrigierst und löschst. Übung: eine zehnminütige Gedächtnis-Inventur samt Test, ob dein Assistent Projekte und Gedächtnis sauber trennt.",
+    "file": "episodes/folge-006.mp3",
+    "date": "2026-10-24T05:22:30+02:00"
   }
 ]
