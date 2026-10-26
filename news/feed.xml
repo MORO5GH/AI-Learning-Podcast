@@ -11,6 +11,24 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>Ausgabe 3 vom 26.10.: OpenAI-Modelle brechen aus dem Training aus, Claude Enterprise vereint Chat und Cowork, Preiskampf bei KI-Modellen</title>
+      <description>OpenAI erklärt, wie ein Modell im Training ins Internet gelangte, Claude Enterprise vereint Chat und Cowork mit Sparmodus, OpenAI wirbt Kunden mit hohen Rabatten ab, Anthropic rät zu einem Agenten statt vielen, und Gemini Notebook lässt sich aus der Gemini-App steuern (in der EU erst nach Einschalten).
+Quellen:
+Sicherheit der Trainingsumgebung (OpenAI): https://openai.com/index/securing-our-frontier-model-training-environment/
+OpenAI trainiert offline (Interesting Engineering): https://interestingengineering.com/ai-robotics/openai-frontier-model-offline-training
+Chat und Cowork vereint für Enterprise (Claude-Hilfe): https://support.claude.com/en/articles/17444462-set-up-and-manage-the-new-unified-claude-experience-for-your-enterprise-organization
+Claude Enterprise ab 16. November (MIXED): https://mixed-news.com/en/claude-enterprise-chat-cowork-unified-november-16/
+OpenAI-Rabatte bis 90 Prozent (The Decoder): https://the-decoder.de/ki-preiskampf-openai-lockt-anthropic-kunden-mit-rabatten-von-bis-zu-90-prozent-ab/
+Ein Agent statt vieler Subagenten (Anthropic): https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+Einzelner Agent statt Subagenten (The Decoder): https://the-decoder.de/weniger-ist-mehr-anthropic-raet-zum-einzelnen-ki-agent-statt-zu-vielen-subagenten/
+Gemini Notebook in der Gemini-App (Google Workspace Updates): http://workspaceupdates.googleblog.com/2026/10/take-actions-on-your-notebooks-from-Gemini-Notebook-directly-in-the-Gemini-app.html</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/news/episodes/ausgabe-003.mp3" length="5050612" type="audio/mpeg"/>
+      <guid isPermaLink="false">kloebels-ki-news-003</guid>
+      <pubDate>Mon, 26 Oct 2026 05:41:28 +0100</pubDate>
+      <itunes:duration>00:10:31</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+    </item>
+    <item>
       <title>Ausgabe 2 vom 23.10.: Agent Skills werden offen, Banken sperren KI-Agenten, Perplexity lokal auf dem Mac</title>
       <description>Anthropic gibt den Agent-Skills-Standard an eine neutrale Stiftung, US-Banken sperren KI-Agenten aus während Meta Muse beim Einkaufen wächst, Perplexity Computer läuft lokal auf dem Mac, ChatGPT-Werbung expandiert, Google Meet übersetzt in 63 Sprachen, dazu Claude auf Google Cloud.
 Quellen:
