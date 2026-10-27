@@ -40,5 +40,12 @@
     "description": "Wie das Gedächtnis von Claude, ChatGPT und Gemini funktioniert, wo es veraltet oder zu schnell verallgemeinert und wie du es ansiehst, korrigierst und löschst. Übung: eine zehnminütige Gedächtnis-Inventur samt Test, ob dein Assistent Projekte und Gedächtnis sauber trennt.",
     "file": "episodes/folge-006.mp3",
     "date": "2026-10-24T05:22:30+02:00"
+  },
+  {
+    "nr": 7,
+    "title": "Folge 7: Mit Dateien arbeiten",
+    "description": "Was passiert, wenn du PDFs, Tabellen und Screenshots hochlädst, warum die KI bei Tabellen rechnen statt schätzen sollte und wie der Strukturcheck falsche Auswertungen verhindert. Übung: eine echte Tabelle hochladen, Struktur prüfen lassen und eine Zählfrage einmal ohne und einmal mit Code-Auswertung vergleichen.",
+    "file": "episodes/folge-007.mp3",
+    "date": "2026-10-27T05:24:27+01:00"
   }
 ]

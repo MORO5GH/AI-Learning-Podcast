@@ -13,7 +13,7 @@ Dreimal pro Woche (Dienstag, Donnerstag, Samstag) ein Lehrplan-Thema. Aktuelle K
 4. Nachbessern statt neu anfangen | erledigt (Folge 4, 2026-10-22)
 5. Projekte und dauerhafte Anweisungen richtig einrichten (Projekte pro Kunde/Thema, persönliche Einstellungen, was gehört wohin) | erledigt (Folge 5, 2026-10-23)
 6. Gedächtnis: was die KI über dich behält, wie man es steuert, korrigiert und löscht | erledigt (Folge 6, 2026-10-24)
-7. Mit Dateien arbeiten: PDFs, Tabellen, Screenshots und Bilder hochladen und auswerten | offen
+7. Mit Dateien arbeiten: PDFs, Tabellen, Screenshots und Bilder hochladen und auswerten | erledigt (Folge 7, 2026-10-27)
 8. Recherche mit KI: Websuche, Quellen prüfen, ausführliche Recherche-Aufträge | offen
 9. Halluzinationen in der Praxis erkennen und vermeiden: Prüfroutinen für Zahlen, Zitate, Fakten | offen
 10. Datenschutz und Kundendaten: was in die KI darf, was nicht, und wie man anonymisiert | offen
