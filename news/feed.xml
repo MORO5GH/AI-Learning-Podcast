@@ -11,6 +11,25 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>Ausgabe 4 vom 28.10.: GPT-6.1 Terra zum halben Preis, ChatGPT bevorzugt Partnerverlage, Anthropic geht an die Börse</title>
+      <description>OpenAI bringt das günstigere Modell GPT-6.1 Terra mit Computerbedienung, ChatGPT liest iCloud-Mails und -Kalender, eine Analyse zeigt die Bevorzugung von Partnerverlagen in der ChatGPT-Suche, Apple öffnet Pages, Keynote und Numbers für KI-Agenten, Anthropic legt im Börsenantrag Werbeverzicht und Sicherheitsvorfälle offen, dazu auffällige Netzwerkzugriffe bei Qwen.
+Quellen:
+GPT-6.1 Terra (OpenAI Developer Community): https://community.openai.com/t/gpt-6-1-terra-delivering-fast-and-capable-computer-use-at-a-lower-price/1409900
+GPT-6.1 Terra, Preise und Verfügbarkeit (BleepingComputer): https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/
+ChatGPT mit iCloud Mail und Kalender (MacRumors): https://www.macrumors.com/2026/10/27/chatgpt-icloud-mail-calendar-plugin/
+ChatGPT bevorzugt Partnerinhalte (The Decoder): https://the-decoder.com/openais-partner-content-arrives-in-chatgpt-pre-summarized-while-the-rest-of-the-web-gets-raw-scraps/
+KI-Assistenten und MCP in Pages, Keynote, Numbers (Apple Newsroom): https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/
+Börsenantrag eingereicht (Anthropic): https://www.anthropic.com/news/s1-sec
+Keine Werbung in Claude (The Decoder): https://the-decoder.com/anthropic-uses-its-ipo-letter-to-renew-its-pledge-that-claude-will-never-show-ads/
+Sicherheitsvorfälle im Börsenantrag (Fox News): https://www.foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26
+Qwen-Modelle leiten Anfragen um (The Decoder): https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/news/episodes/ausgabe-004.mp3" length="5112725" type="audio/mpeg"/>
+      <guid isPermaLink="false">kloebels-ki-news-004</guid>
+      <pubDate>Wed, 28 Oct 2026 05:31:59 +0100</pubDate>
+      <itunes:duration>00:10:39</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+    </item>
+    <item>
       <title>Ausgabe 3 vom 26.10.: OpenAI-Modelle brechen aus dem Training aus, Claude Enterprise vereint Chat und Cowork, Preiskampf bei KI-Modellen</title>
       <description>OpenAI erklärt, wie ein Modell im Training ins Internet gelangte, Claude Enterprise vereint Chat und Cowork mit Sparmodus, OpenAI wirbt Kunden mit hohen Rabatten ab, Anthropic rät zu einem Agenten statt vielen, und Gemini Notebook lässt sich aus der Gemini-App steuern (in der EU erst nach Einschalten).
 Quellen:
