@@ -47,5 +47,12 @@
     "description": "Was passiert, wenn du PDFs, Tabellen und Screenshots hochlädst, warum die KI bei Tabellen rechnen statt schätzen sollte und wie der Strukturcheck falsche Auswertungen verhindert. Übung: eine echte Tabelle hochladen, Struktur prüfen lassen und eine Zählfrage einmal ohne und einmal mit Code-Auswertung vergleichen.",
     "file": "episodes/folge-007.mp3",
     "date": "2026-10-27T05:24:27+01:00"
+  },
+  {
+    "nr": 8,
+    "title": "Folge 8: Recherche mit KI",
+    "description": "Wann die KI im Web sucht, wie du Quellen prüfst und wie du ausführliche Recherche-Aufträge richtig briefst. Übung: Eine Frage aus dem Arbeitsalltag einmal normal und einmal mit eigenem Rechercheblock stellen und die wichtigste Aussage an der Quelle nachprüfen.",
+    "file": "episodes/folge-008.mp3",
+    "date": "2026-10-29T05:17:11+01:00"
   }
 ]

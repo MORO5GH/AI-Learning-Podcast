@@ -11,6 +11,15 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>Folge 8: Recherche mit KI</title>
+      <description>Wann die KI im Web sucht, wie du Quellen prüfst und wie du ausführliche Recherche-Aufträge richtig briefst. Übung: Eine Frage aus dem Arbeitsalltag einmal normal und einmal mit eigenem Rechercheblock stellen und die wichtigste Aussage an der Quelle nachprüfen.</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-008.mp3" length="6961093" type="audio/mpeg"/>
+      <guid isPermaLink="false">ki-werkstatt-008</guid>
+      <pubDate>Thu, 29 Oct 2026 05:17:11 +0100</pubDate>
+      <itunes:duration>00:14:30</itunes:duration>
+      <itunes:episode>8</itunes:episode>
+    </item>
+    <item>
       <title>Folge 7: Mit Dateien arbeiten</title>
       <description>Was passiert, wenn du PDFs, Tabellen und Screenshots hochlädst, warum die KI bei Tabellen rechnen statt schätzen sollte und wie der Strukturcheck falsche Auswertungen verhindert. Übung: eine echte Tabelle hochladen, Struktur prüfen lassen und eine Zählfrage einmal ohne und einmal mit Code-Auswertung vergleichen.</description>
       <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-007.mp3" length="7272521" type="audio/mpeg"/>
