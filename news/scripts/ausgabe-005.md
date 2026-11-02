@@ -1,115 +1,103 @@
-# Klöbels KI-News – Ausgabe 5 vom 30.10.2026
+# Klöbels KI-News – Ausgabe 5 vom 02.11.2026
 
-LENA: Du öffnest eine Seite im eingebauten Browser deines KI-Assistenten. Und diese Seite liest im Hintergrund Dateien von deiner Festplatte.
+LENA: Elf Stunden. So lange lag im Erweiterungsmarkt des Code-Editors Cursor eine gefälschte Claude-Code-Erweiterung.
 
-TOM: Genau das haben Sicherheitsforscher bei fünf Programmierwerkzeugen gezeigt. Darunter Claude Desktop, Codex von OpenAI und Visual Studio Code. Bei zwei davon ist die Lücke laut den Forschern noch offen.
+TOM: Und wer sie in dieser Zeit installiert hat, hat sich eine Hintertür auf den Rechner geholt. Laut Cursor sind bis zu fünftausend Nutzer betroffen.
 
-LENA: Außerdem: Google stellt Gemini vier Carbon vor, der ChatGPT-Agent Dot soll bald nach Europa kommen, und Google baut die Werbung in der KI-Suche aus.
+LENA: Außerdem: Aus Claude Max zwanzig x wird Ultra, ChatGPT stellt auf ein gemeinsames Token-Budget um, und die großen KI-Anbieter einigen sich auf ein Signal gegen KI-Training in der robots punkt txt.
 
-TOM: Dazu neue Kostenberichte für Claude Enterprise und ein offenes Billionen-Modell aus Frankreich.
+TOM: Dazu die Computerbedienung in der Gemini-Schnittstelle, die jetzt allgemein verfügbar ist.
 
-LENA: Das ist Klöbels KI-News vom Freitag, 30. Oktober 2026. Ich bin Lena.
+LENA: Das ist Klöbels KI-News vom Montag, 2. November 2026. Ich bin Lena.
 
-TOM: Und ich bin Tom. Wir schauen auf Mittwoch und Donnerstag.
+TOM: Und ich bin Tom. Wir schauen aufs Wochenende, also Freitag bis Sonntag. Und eine Meldung vom Donnerstag nehmen wir mit, weil sie erst am Freitag bekannt wurde.
 
-LENA: Dann gleich zur Sicherheitslücke. Was genau ist passiert?
+LENA: Das ist die mit der Erweiterung. Was genau ist passiert?
 
-TOM: Die Sicherheitsfirma Forever Security hat am Donnerstag einen Bericht veröffentlicht. Sie nennt das Problem Embrace, abgeleitet von „embedded browser“, also eingebauter Browser. Viele KI-Assistenten für Entwickler haben inzwischen einen kleinen Browser eingebaut, damit der Agent Webseiten ansehen oder lokale Vorschauen öffnen kann. Diese Browser dürfen mehr als ein normaler Browser. Und genau da liegt das Problem.
+TOM: Am Donnerstag, dem neunundzwanzigsten Oktober, tauchte im Erweiterungsmarkt von Cursor eine Version der Claude-Code-Erweiterung auf, die nicht von Anthropic stammte. Betroffen ist laut Cursor die Version zwei Punkt eins Punkt drei eins drei, manche Berichte nennen auch die Version davor. Sie war laut Cursor etwa elf Stunden verfügbar. Berichtet hat am Freitag unter anderem Help Net Security. Entdeckt hat das Ganze die Sicherheitsfirma Phorion.
 
-LENA: Was konnte ein Angreifer damit anstellen?
+LENA: Was hat die gefälschte Erweiterung gemacht?
 
-TOM: Je nach Werkzeug unterschiedlich. Bei Cursor konnte eine präparierte Webseite dem Agenten versteckte Befehle unterschieben, und der hat dann Code auf dem Rechner ausgeführt. Bei GitHub Copilot ließ sich die Adresszeile fälschen. Da stand dann zum Beispiel github punkt com, obwohl eine Phishing-Seite geladen war. Und bei Claude Desktop, Codex und Visual Studio Code konnte eine lokale Seite Dateien lesen, die sie gar nicht sehen dürfte. Die Forscher nennen als Beispiele Zugangsschlüssel und Konfigurationsdateien mit Passwörtern.
+TOM: Sie lief sofort los, ohne dass man etwas anklicken musste. Sie hat einen fremden SSH-Schlüssel auf dem Rechner hinterlegt. SSH ist der Zugang, über den man einen Rechner aus der Ferne steuert. Dann hat sie eine Verbindung zum Server des Angreifers aufgebaut, und zwar so, dass sie auch nach dem Schließen des Editors weiterläuft und nach einem Neustart wiederkommt. Außerdem hat sie Rechnername, Benutzername, die Git-E-Mail-Adresse und die öffentliche IP-Adresse verschickt. Und die Namen von bis zu vierzig Umgebungsvariablen, die nach Zugangsschlüsseln aussehen. Die Namen, nicht die Inhalte.
 
-LENA: Und wie ist der Stand bei den Updates?
+LENA: Betrifft das auch Visual Studio Code direkt?
 
-TOM: Cursor hat am ersten Oktober nachgebessert, GitHub Mitte Oktober. Bei Codex von OpenAI und bei Visual Studio Code von Microsoft ist die Lücke laut Forever Security weiter offen. Microsoft hat die Meldung als ungültig eingestuft. OpenAI hat laut den Forschern gar nicht geantwortet. Bei Claude Desktop ist es unklar. Anthropic hat den ersten Hinweis im Juli abgelehnt, einen Tag später aber eine gleiche Meldung einer anderen Firma angenommen. Ob die Lücke inzwischen geschlossen ist, sagt der Bericht nicht ausdrücklich. Anthropic, OpenAI und Microsoft haben auf Nachfragen von The Register nicht reagiert.
-
-LENA: Und was heißt das für die Praxis?
-
-TOM: Du arbeitest täglich mit Claude, und wahrscheinlich liegen auf deinem Rechner Zugangsdaten zu Shop-Systemen, Tracking-Konten oder Feed-Tools. Drei Dinge helfen. Erstens: alle KI-Werkzeuge aktuell halten. Zweitens: im eingebauten Browser keine fremden Seiten oder HTML-Dateien öffnen, die dir jemand schickt. Drittens: Zugangsschlüssel nicht offen in Projektordnern ablegen, auf die ein Agent Zugriff hat. Das ist sowieso eine gute Regel.
-
-LENA: Passt dazu nicht auch die Meldung über Anthropic selbst?
-
-TOM: Ja. Die Washington Post hatte schon am Montag berichtet, The Decoder hat es am Mittwoch zusammengefasst. Ein Sicherheits-Start-up namens Cathedral ist im Rahmen von Anthropics Prämienprogramm für gemeldete Lücken in interne Systeme gelangt, und zwar mit KI-Agenten. Der Weg lief über Software von Drittanbietern, etwa für Vertrieb und Verwaltung. Anthropic bestätigt den Zugriff auf einige Vertriebs-, Personal- und IT-Systeme. Betroffen seien Kontaktdaten einzelner Kunden und Partner. Chats mit Claude seien laut Anthropic nicht betroffen gewesen.
-
-LENA: Die Lehre daraus?
-
-TOM: Die Schwachstelle war nicht das KI-Modell, sondern ein angebundenes Fremdprogramm. Das gilt für jede Firma. Wenn du für Kunden Zapier-Verbindungen oder Schnittstellen einrichtest, lohnt sich ab und zu ein Blick, welche alten Zugänge noch aktiv sind und was sie dürfen.
-
-LENA: Jetzt zu Google. Was ist Gemini vier Carbon?
-
-TOM: Ein neues Spitzenmodell von Google DeepMind, vorgestellt am Mittwoch. Nur zwei Wochen nach Gemini vier Argon. Carbon ist für lange, mehrstufige Aufgaben gebaut, etwa Software über mehrere Tage weiterentwickeln, und für die Abwehr von Cyberangriffen. Also Lücken finden und schließen.
-
-LENA: Wie gut ist es?
-
-TOM: Im Index von Artificial Analysis, einer unabhängigen Vergleichsplattform, liegt Carbon mit neunundfünfzig Punkten auf Platz eins. Argon kam auf fünfzig. Beim Programmieren mit Agenten liegt Carbon knapp hinter Claude Opus fünf Punkt fünf. Ein Detail ist aber wichtig: Laut den Messwerten, die The Decoder zusammengetragen hat, ist der Anteil erfundener Antworten gestiegen, von vier auf elf Prozent.
-
-LENA: Kann man es schon nutzen?
-
-TOM: Nein, noch nicht. Zuerst bekommen nur ausgewählte Fachleute für Cyberabwehr Zugang. Danach will Google den Kreis über ein Partnerprogramm namens Fairwind schrittweise erweitern. Für normale Entwickler, Firmen und Endkunden gibt es noch keinen Termin. Google nimmt außerdem an einem freiwilligen Vorabtest der US-Regierung teil. Als Preis nennt Google zum Start zwei Dollar pro Million Eingabe-Token und zehn Dollar pro Million Ausgabe-Token.
+TOM: Laut Help Net Security gab es im offiziellen Marktplatz von Microsoft keine verseuchte Version. Betroffen sind Editoren, die auf Visual Studio Code aufbauen und einen eigenen Marktplatz nutzen, vor allem Cursor. Cursor will die Betroffenen direkt anschreiben.
 
 LENA: Und was heißt das für die Praxis?
 
-TOM: Kurzfristig wenig, weil du nicht drankommst. Interessant ist die Richtung: Die großen Anbieter liefern sich gerade ein enges Rennen, und das drückt die Preise. Und die gestiegene Fehlerquote zeigt, dass ein besserer Platz in einer Rangliste nicht heißt, dass ein Modell bei Fakten zuverlässiger ist. Für Produkttexte oder Kundenantworten bleibt die Regel: Zahlen und Fakten gegenprüfen.
+TOM: Wenn du Cursor nutzt und am Donnerstag die Claude-Code-Erweiterung installiert oder aktualisiert hast, reicht Deinstallieren nicht. Die Hintertür läuft unabhängig weiter. Schau in die Datei mit den erlaubten SSH-Schlüsseln, ob dort ein Eintrag namens s v c Bindestrich telemetry steht. Cursor hat Aufräumskripte für Mac und Windows veröffentlicht. Und dann alle Zugangsdaten tauschen, an die dieser Rechner herankam. Für dich heißt das konkret: Shop-Zugänge, Tracking-Konten, Schlüssel für Schnittstellen und Zapier-Verbindungen. Grundsätzlich gilt: Erweiterungen für Programmierwerkzeuge haben weitreichende Rechte auf deinem Rechner. Automatische Updates sind bequem, aber genau darüber kam hier der Schadcode.
 
-LENA: Dann zu OpenAI. Was gibt es Neues bei Dot?
+LENA: Bleiben wir bei Anthropic, aber bei einem erfreulicheren Thema. Was ändert sich bei den Claude-Tarifen?
 
-TOM: Zur Erinnerung: Dot ist der proaktive Agent in ChatGPT. Du gibst ihm Aufgaben oder Dinge, die er beobachten soll, und er meldet sich von selbst. Bisher ging das in der ChatGPT-App und in Slack. Seit Mittwoch kann man Dot laut 9to5Mac auch per iMessage und per RCS schreiben, also über die normale Nachrichten-App auf dem Handy. Mit Text, Fotos oder Sprachnachrichten. Eingerichtet wird das im Profil von Dot unter „Texting“. OpenAI sagt, Dot sieht dabei deine anderen Unterhaltungen nicht.
+TOM: Am Freitag hat Anthropic die beiden Max-Tarife umbenannt. Max fünf x für hundert Dollar im Monat heißt jetzt einfach Max. Max zwanzig x für zweihundert Dollar heißt jetzt Ultra. Die Preise bleiben gleich, bestehende Abos werden automatisch umgestellt.
 
-LENA: Und in Europa?
+LENA: Nur ein neuer Name?
 
-TOM: Da kommt die eigentliche Neuigkeit. Auf dem DevDay von OpenAI in Berlin hat Romain Huet, der bei OpenAI für die Entwickler zuständig ist, gesagt: Dot soll in wenigen Wochen breiter in Europa verfügbar sein. Grundlage seien Gespräche mit den Aufsichtsbehörden. Bisher sind persönliche Pro-Konten in der EU, im übrigen Wirtschaftsraum, in der Schweiz und in Großbritannien ausgeschlossen. Einige Unternehmenskonten haben schon Zugriff. So berichtet es The Decoder.
+TOM: Nein, bei Ultra fällt für verifizierte Konten das Fünf-Stunden-Limit weg. Bisher gab es bei Claude zwei Grenzen: ein Kontingent, das sich alle fünf Stunden erneuert, und eins pro Woche. Bei Ultra bleibt nur noch die Wochengrenze. Die liegt laut Hilfeseite von Anthropic beim Zehnfachen des Pro-Tarifs. Dazu kommt eine eigene Wochengrenze für das Modell Fable.
 
-LENA: Und was heißt das für die Praxis?
+LENA: Wie wird man verifiziert?
 
-TOM: Wenn Dot kommt, hast du einen zweiten proaktiven Agenten neben dem, was du mit Claude und Zapier schon machst. Denkbar ist zum Beispiel: „Sag mir Bescheid, wenn sich bei diesem Wettbewerber die Preise ändern“, und die Antwort kommt als Nachricht aufs Handy. Bevor du so etwas für Kunden einsetzt, würde ich abwarten, welche Datenschutzbedingungen OpenAI für Europa festlegt. Genau darüber wird ja offenbar verhandelt.
-
-LENA: Bleiben wir bei Google, aber beim Geld. Was hat Google zur KI-Suche gesagt?
-
-TOM: Am Mittwoch kamen die Quartalszahlen. Der Umsatz mit der Suche und verwandter Werbung stieg um zwölf Prozent auf gut dreiundsechzig Milliarden Dollar. Analysten hatten mit etwa fünfzehn Prozent gerechnet. Die Aktie fiel deutlich. Laut Google-Manager Philipp Schindler bringt der KI-Modus pro Anfrage bisher weniger Geld als die klassische Suche. Deshalb will Google die Werbung in der KI-Suche ausbauen, in den USA und international. Laut TechCrunch sind für die USA außerdem neue Anzeigenformate für längere Dialoge geplant.
-
-LENA: Gibt es schon Länder oder Termine?
-
-TOM: Nein. Google hat weder Länder noch Formate noch Zeitpunkte genannt. Ob und wann Deutschland dabei ist, ist offen.
+TOM: Automatisch. Anthropic prüft laut Hilfeseite zum Beispiel, wie alt das Konto ist und wie die Zahlungen bisher liefen. Man muss nichts tun. Ob es geklappt hat, siehst du in den Einstellungen unter Nutzung. Steht dort kein Balken für die aktuelle Sitzung mehr, ist das Konto verifiziert. Neue Ultra-Konten haben die Fünf-Stunden-Grenze zunächst noch. Mehrere Berichte deuten das als Maßnahme gegen weiterverkaufte oder geteilte Zugänge. Das ist aber eine Einschätzung von außen, Anthropic selbst sagt dazu nichts.
 
 LENA: Und was heißt das für die Praxis?
 
-TOM: Das ist dein Kerngeschäft. Wenn mehr Menschen im KI-Modus suchen, wandert ein Teil der Sichtbarkeit von den klassischen Anzeigen und Treffern in die KI-Antworten. Für deine Kunden heißt das: Shopping-Feeds sauber halten, weil Google daraus auch in der KI-Suche schöpft. Und in den Auswertungen genau hinschauen, ob sich Klickraten verändern, sobald neue Werbeformate kommen.
+TOM: Wenn du mit Max zwanzig x gearbeitet hast, bist du jetzt bei Ultra. Der Ärger mit der Sperre mitten am Vormittag, wenn ein langer Cowork-Auftrag oder eine Analyse viel verbraucht hat, sollte damit vorbei sein. Die Woche als Ganzes musst du aber weiter im Blick behalten. Wer am Montag sehr viel verbraucht, hat am Freitag weniger übrig. Und für geplante Aufgaben, die nachts laufen, ist das praktisch: Die verteilen sich jetzt nicht mehr auf Fünf-Stunden-Fenster.
 
-LENA: Und Google hatte noch etwas für App-Anbieter?
+LENA: Dann zu OpenAI. Da geht es auch um Kontingente, aber in die andere Richtung, oder?
 
-TOM: Ja, am Mittwoch beim Android-Entwicklertreffen. Google startet die Vorschau einer Plattform namens Connected Apps. Anbieter können ihre App oder ihren Dienst über das Model Context Protocol an Gemini anbinden, also über den offenen Standard, über den auch Claude mit anderen Programmen spricht. Laut Google sind schon über fünfzig Partner in der Gemini-App aktiv, darunter Adobe. In den kommenden Wochen soll die Google-Suche folgen. Für Shops mit eigener App oder eigenem Dienst entsteht da ein neuer Weg, direkt in Gemini aufzutauchen.
+TOM: Eher ja. The Decoder hat am Sonntag zwei Änderungen zusammengefasst, die OpenAI auf seinen Hilfeseiten beschreibt. Erstens: Ab Dezember legt ChatGPT die Bereiche Chat und Work zusammen. Work ist der Bereich, in dem ChatGPT als Agent selbständig Aufgaben erledigt. Plus, Pro und Business bekommen dann ein gemeinsames Budget auf Basis von Token für ChatGPT und für Codex, das Programmierwerkzeug.
 
-LENA: Jetzt zu Anthropic. Was ist neu bei Claude Enterprise?
+LENA: Token, also die Textbausteine, nach denen Sprachmodelle abrechnen.
 
-TOM: Seit Mittwoch sind drei Funktionen allgemein verfügbar. Erstens Smart Reports, also Auswertungsberichte. Ein Admin wählt ein Team und einen Zeitraum von bis zu achtundzwanzig Tagen. Claude liest dann eine Stichprobe der Unterhaltungen und berichtet, wofür das Team Claude genutzt hat, was dabei herauskam, was eine Sitzung gekostet hat und wo es hakt. Das umfasst Chat, Claude Code und Cowork. Pro Organisation gibt es zehn Berichte im Monat kostenlos. Die Funktion ist zunächst abgeschaltet und muss vom Inhaber eingeschaltet werden. Laut Anthropic ist sie nicht dafür gedacht, einzelne Mitarbeiter zu bewerten.
+TOM: Genau. Aufwendigere Modelle und längere Aufgaben verbrauchen mehr davon. Einfache, schnelle Chats zählen laut The Decoder nicht mit. Wie viel übrig ist und wann es sich erneuert, soll in den Einstellungen stehen. Ist das Budget leer, kannst du warten, den Tarif wechseln oder Guthaben nachkaufen. Für Pro und Business hatte OpenAI das Kontingent erst am neunundzwanzigsten Oktober verdoppelt, bei Business im Premium-Tarif.
 
-LENA: Und die anderen beiden?
+LENA: Und die zweite Änderung?
 
-TOM: Zweitens kurze Umfragen, die als kleine Karte im Chat erscheinen. Drittens gemeinsame Budgets für Gruppen. Ein Team bekommt einen monatlichen Topf, zusätzlich zur Grenze jedes Einzelnen. Wer zuerst an eine Grenze stößt, wird gestoppt. Das geht in Enterprise-Tarifen mit Abrechnung nach Verbrauch oder mit Nutzungsguthaben.
-
-LENA: Und was heißt das für die Praxis?
-
-TOM: Für dich selbst eher nicht, das ist für größere Organisationen. Aber wenn du Kunden bei der Einführung von Claude berätst, ist das ein gutes Argument. Die häufigste Frage von Geschäftsführern ist: Was bringt uns das eigentlich? Mit diesen Berichten lässt sich das zumindest grob belegen. Anthropic sagt selbst, dass die Zahlen wegen der Stichprobe nur eine Richtung anzeigen.
-
-LENA: Gab es bei Anthropic noch mehr?
-
-TOM: Kurz: Claude for Legal hat vorgefertigte Vorlagen für Rechtsabteilungen bekommen, etwa zum Abgleich von Verträgen mit internen Vorgaben. Das richtet sich an Enterprise-Kunden und ist für dich eher eine Randnotiz.
-
-LENA: Zum Schluss nach Frankreich. Was hat Mistral veröffentlicht?
-
-TOM: Am Donnerstag hat Mistral die Gewichte von Mistral Large vier freigegeben, also das komplette Modell zum Herunterladen. Es war seit Anfang Oktober als Vorschau verfügbar. Das Modell hat rund eine Billion Parameter, aktiv sind pro Rechenschritt etwa neunundvierzig Milliarden. Mistral stellt es auf Hugging Face bereit und bietet es über die eigene Schnittstelle an. Den Schwerpunkt legt Mistral auf Cyberabwehr und Programmieren mit Agenten. Laut Mistral liegt es dort vor allen anderen offenen Modellen. Das ist allerdings die Angabe des Herstellers.
-
-LENA: Offen heißt aber nicht frei für alles, oder?
-
-TOM: Richtig. Die Lizenz ist eine abgewandelte MIT-Lizenz. Wer das Modell als bezahlten Dienst für Dritte anbieten will, braucht laut einem Bericht von IT Munch eine eigene Lizenz von Mistral. Und für den Betrieb braucht man sehr viel Rechenleistung. Das läuft nicht auf einem Laptop.
+TOM: OpenAI begrenzt, wie viele bezahlte Konten man auf einem Gerät und mit einer Zahlungskarte nutzen kann. Das gilt für Go, Plus und die Pro-Tarife, nicht für kostenlose Konten und nicht für Business, Enterprise oder Edu. Wer an die Grenze stößt, sieht die Meldung „Device limit reached“, also Gerätegrenze erreicht. Das zielt laut The Decoder auf Leute, die zwischen mehreren günstigen Abos hin und her springen, um mehr Nutzung herauszuholen.
 
 LENA: Und was heißt das für die Praxis?
 
-TOM: Für Kunden, die Wert darauf legen, dass Daten in Europa bleiben, wird Mistral interessanter. Ein großes Modell eines europäischen Anbieters, das man notfalls auch auf eigenen Servern betreiben kann. Realistisch nutzt du es eher über die Schnittstelle von Mistral, zum Beispiel für Automatisierungen mit sensiblen Kundendaten.
+TOM: Wenn du ChatGPT neben Claude für Kundenarbeit nutzt, rechne ab Dezember damit, dass aufwendige Aufgaben schneller am Limit sind. Die einfache Faustregel: Für schnelle Fragen das schnelle Modell, für lange Rechercheaufträge gezielt das teure. Und falls du mit Kunden zusammen ein Gerät nutzt, auf dem mehrere bezahlte Konten angemeldet sind, etwa bei einem Workshop, könnte die Gerätegrenze stören. Business-Konten sind davon ausgenommen.
+
+LENA: Jetzt ein Thema, das deine Shop-Kunden direkt betrifft. Was hat es mit der robots punkt txt auf sich?
+
+TOM: Die robots punkt txt ist die kleine Textdatei auf jeder Website, in der steht, welche Suchmaschinen und Programme welche Seiten abrufen dürfen. Am Freitag haben OpenAI, Google, Microsoft und Anthropic angekündigt, ein gemeinsames Kennzeichen zu unterstützen. Damit kann ein Seitenbetreiber sagen: Meine Inhalte bitte nicht zum Training von KI-Modellen verwenden. Berichtet hat The Verge. Grundlage ist ein Entwurf bei der IETF, dem Gremium für Internetstandards. Verfasst hat ihn ein Mitarbeiter von Anthropic.
+
+LENA: Wie sieht das aus?
+
+TOM: Man trägt einen eigenen Namen als Programmkennung ein, usage ai training, mit zwei Unterstrichen davor, und verbietet dann den Zugriff. Wichtig ist der Unterschied: Das Signal regelt nur das Training. Es ist laut den Berichten keine Anweisung zum Abrufen von Seiten. Die Programme dürfen eine Seite also weiterhin lesen, etwa um sie in einer KI-Antwort zu zitieren. Microsoft plant dafür eine eigene, getrennte Einstellung.
+
+LENA: Ab wann gilt das?
+
+TOM: Unterschiedlich. Anthropic hat laut AI Weekly schon mit der Umsetzung begonnen. OpenAI will es in den kommenden Monaten umsetzen, Microsoft ab dem ersten Februar zweitausendsiebenundzwanzig, Google im Lauf des Jahres zweitausendsiebenundzwanzig. Google behandelt das neue Signal dann so, als hätte die Seite den bisherigen Google-Eintrag für KI-Training gesperrt. Zwei Einschränkungen: Es ist noch kein fertiger Standard, und Programme, die sich nicht daran halten, hält es nicht auf. OpenAI nennt es selbst ein Mittel zur Abstimmung, keine Sicherheitsmaßnahme. Und Daten, die schon gesammelt wurden, bleiben gesammelt.
+
+LENA: Und was heißt das für die Praxis?
+
+TOM: Für deine Kunden ist das eine Abwägung, die sie bewusst treffen sollten. Ein Onlineshop will in der Regel, dass KI-Assistenten seine Produkte kennen und empfehlen. Wer pauschal alle KI-Programme aussperrt, riskiert, in KI-Antworten nicht mehr aufzutauchen. Das neue Signal erlaubt eine feinere Lösung: Training ablehnen, Abruf für Antworten erlauben. Zum Beispiel für Ratgebertexte oder eigene Studien, die ein Kunde schützen will, während Produktseiten offen bleiben. Ich würde jetzt noch nichts ändern, aber die robots punkt txt deiner Kunden auf die Liste für das nächste Quartal setzen.
+
+LENA: Dann zu Google. Was ist neu in der Gemini-Schnittstelle?
+
+TOM: Laut den Versionshinweisen der Gemini-Schnittstelle ist das Werkzeug für Computerbedienung seit Freitag allgemein verfügbar, also keine Vorschau mehr. Damit kann ein Programm Gemini einen Bildschirminhalt zeigen, und Gemini schlägt den nächsten Schritt vor: hier klicken, dort etwas eintippen. Das Programm führt den Schritt aus, schickt den neuen Bildschirm zurück, und so weiter. Für heikle Aktionen sind Bestätigungen vorgesehen. Die Schutzmaßnahmen müssen die Entwickler aber selbst einbauen.
+
+LENA: Ist das für dich als Nutzer interessant oder nur für Entwickler?
+
+TOM: Erst einmal für Entwickler. Für dich wird es indirekt spannend. Allgemein verfügbar heißt bei Google, dass Firmen das in fertige Produkte einbauen dürfen. Viele Shop-Backends, Werbekonten und Feed-Tools haben keine Schnittstelle für jede Funktion. Ein Agent, der die Oberfläche bedient wie ein Mensch, kann diese Lücke füllen. Das gilt genauso für die vergleichbaren Funktionen bei Anthropic und OpenAI. Hier sind jetzt alle drei großen Anbieter mit einem Angebot dabei.
+
+LENA: Und was heißt das für die Praxis?
+
+TOM: Wenn dir ein Anbieter in nächster Zeit ein Werkzeug verkauft, das selbständig in deinem Werbekonto oder deinem Shop-System klickt, frag nach, welche Bestätigungen eingebaut sind. Bei Google liegt das ausdrücklich beim Entwickler. Ein Agent, der ohne Rückfrage Gebote ändert oder Produkte löscht, ist ein Risiko.
+
+LENA: Zum Schluss noch eine Datenschutz-Meldung von OpenAI. Worum geht es?
+
+TOM: Laut The Decoder vom Samstag will OpenAI ab dem neunundzwanzigsten November Daten aus einem speziellen Programm für Sicherheitsforscher zum Training nutzen. Das betrifft Sitzungen mit Daybreak Blue, einem Angebot für Teilnehmer des Programms für vertrauenswürdigen Zugang, und zwar auch dann, wenn die Teilnehmer das Training in den Einstellungen abgeschaltet hatten. Nach heftiger Kritik hat OpenAI eine zweite Mail verschickt und eine eigene Möglichkeit zum Widerspruch angekündigt. Wie die aussieht, ist noch offen.
+
+LENA: Betrifft dich das?
+
+TOM: Direkt nicht, das ist ein kleiner Kreis von Fachleuten. Die Lehre ist trotzdem allgemein. Eine Einstellung wie „nicht für Training verwenden“ gilt so lange, wie der Anbieter seine Bedingungen nicht ändert. Wenn du Kundendaten über einen KI-Dienst verarbeitest, lohnt es sich, Mails mit geänderten Nutzungsbedingungen tatsächlich zu lesen. Und für wirklich sensible Daten sind Business- oder Enterprise-Verträge mit fest zugesagtem Trainingsausschluss die sicherere Wahl.
 
 LENA: Worauf sollte man in den nächsten Tagen achten?
 
-TOM: Auf drei Dinge. Ob Anthropic, OpenAI oder Microsoft sich zu den Lücken in den eingebauten Browsern äußern und Updates liefern. Ob Dot tatsächlich in den nächsten Wochen in Deutschland ankommt. Und ob Google die Connected Apps wie angekündigt in die Suche bringt.
+TOM: Ob Cursor und Anthropic weitere Details zur gefälschten Erweiterung nennen, vor allem dazu, wie sie in den Marktplatz gelangt ist. Und am neunundzwanzigsten November der Stichtag bei OpenAI: Bis dahin sollte klar sein, wie der angekündigte Widerspruch funktioniert.
 
-LENA: Das waren Klöbels KI-News. Bis Montag.
+LENA: Das waren Klöbels KI-News. Bis Mittwoch.
