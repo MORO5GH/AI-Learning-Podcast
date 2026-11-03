@@ -200,6 +200,6 @@ MIRA: Damit kommen wir zum Ausblick. In der nächsten Folge geht es um Datenschu
 
 JAN: Und das passt gut zu heute. Wir haben gesagt: Leg das Material auf den Schreibtisch. Nächstes Mal klären wir, welches Material da hingehört und welches nicht.
 
-MIRA: Danke fürs Zuhören und ein schönes Wochenende.
+MIRA: Danke fürs Zuhören und eine gute Woche.
 
-JAN: Bis Dienstag beim Klöbels KI-Podcast.
+JAN: Bis Donnerstag beim Klöbels KI-Podcast.
