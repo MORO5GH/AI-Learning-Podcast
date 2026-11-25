@@ -11,6 +11,15 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>Folge 9: Halluzinationen erkennen und vermeiden</title>
+      <description>Wie du erfundene Zahlen, Zitate und Fakten in KI-Antworten erkennst und mit einfachen Prüfroutinen und Schutzsätzen im Prompt vermeidest. Übung: einen KI-Text der letzten Tage gegen die Ausgangsdaten prüfen und zwei Schutzsätze ins Analyse-Projekt eintragen.</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-009.mp3" length="7018331" type="audio/mpeg"/>
+      <guid isPermaLink="false">ki-werkstatt-009</guid>
+      <pubDate>Wed, 25 Nov 2026 17:45:40 +0100</pubDate>
+      <itunes:duration>00:14:37</itunes:duration>
+      <itunes:episode>9</itunes:episode>
+    </item>
+    <item>
       <title>Folge 8: Recherche mit KI</title>
       <description>Wann die KI im Web sucht, wie du Quellen prüfst und wie du ausführliche Recherche-Aufträge richtig briefst. Übung: Eine Frage aus dem Arbeitsalltag einmal normal und einmal mit eigenem Rechercheblock stellen und die wichtigste Aussage an der Quelle nachprüfen.</description>
       <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/episodes/folge-008.mp3" length="6961093" type="audio/mpeg"/>

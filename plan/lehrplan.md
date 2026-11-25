@@ -15,7 +15,7 @@ Einmal pro Woche (Mittwoch) ein Lehrplan-Thema. Aktuelle KI-Neuigkeiten gehören
 6. Gedächtnis: was die KI über dich behält, wie man es steuert, korrigiert und löscht | erledigt (Folge 6, 2026-10-24)
 7. Mit Dateien arbeiten: PDFs, Tabellen, Screenshots und Bilder hochladen und auswerten | erledigt (Folge 7, 2026-10-27)
 8. Recherche mit KI: Websuche, Quellen prüfen, ausführliche Recherche-Aufträge | erledigt (Folge 8, 2026-10-29)
-9. Halluzinationen in der Praxis erkennen und vermeiden: Prüfroutinen für Zahlen, Zitate, Fakten | offen
+9. Halluzinationen in der Praxis erkennen und vermeiden: Prüfroutinen für Zahlen, Zitate, Fakten | erledigt (Folge 9, 2026-11-25)
 10. Datenschutz und Kundendaten: was in die KI darf, was nicht, und wie man anonymisiert | offen
 11. Die großen Assistenten im Vergleich: Claude, ChatGPT, Gemini – Stärken und wann welcher (vorher recherchieren) | offen
 12. Spezialwerkzeuge: Perplexity, NotebookLM und andere – wofür sie besser sind (vorher recherchieren) | offen

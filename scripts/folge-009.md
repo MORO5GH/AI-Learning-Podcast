@@ -196,10 +196,10 @@ MIRA: Und den Prüfprompt aus Schritt eins in die Prompt-Bibliothek.
 
 JAN: Unbedingt.
 
-MIRA: Damit kommen wir zum Ausblick. In der nächsten Folge geht es um Datenschutz und Kundendaten. Also darum, was überhaupt in die KI darf, was besser draußen bleibt, und wie man Daten so anonymisiert, dass man trotzdem gut damit arbeiten kann.
+MIRA: Damit kommen wir zum Ausblick. In der nächsten Folge, nächsten Mittwoch, geht es um Datenschutz und Kundendaten. Also darum, was überhaupt in die KI darf, was besser draußen bleibt, und wie man Daten so anonymisiert, dass man trotzdem gut damit arbeiten kann.
 
 JAN: Und das passt gut zu heute. Wir haben gesagt: Leg das Material auf den Schreibtisch. Nächstes Mal klären wir, welches Material da hingehört und welches nicht.
 
 MIRA: Danke fürs Zuhören und eine gute Woche.
 
-JAN: Bis Donnerstag beim Klöbels KI-Podcast.
+JAN: Bis nächsten Mittwoch beim Klöbels KI-Podcast.

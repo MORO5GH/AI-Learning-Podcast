@@ -54,5 +54,12 @@
     "description": "Wann die KI im Web sucht, wie du Quellen prüfst und wie du ausführliche Recherche-Aufträge richtig briefst. Übung: Eine Frage aus dem Arbeitsalltag einmal normal und einmal mit eigenem Rechercheblock stellen und die wichtigste Aussage an der Quelle nachprüfen.",
     "file": "episodes/folge-008.mp3",
     "date": "2026-10-29T05:17:11+01:00"
+  },
+  {
+    "nr": 9,
+    "title": "Folge 9: Halluzinationen erkennen und vermeiden",
+    "description": "Wie du erfundene Zahlen, Zitate und Fakten in KI-Antworten erkennst und mit einfachen Prüfroutinen und Schutzsätzen im Prompt vermeidest. Übung: einen KI-Text der letzten Tage gegen die Ausgangsdaten prüfen und zwei Schutzsätze ins Analyse-Projekt eintragen.",
+    "file": "episodes/folge-009.mp3",
+    "date": "2026-11-25T17:45:40+01:00"
   }
 ]
