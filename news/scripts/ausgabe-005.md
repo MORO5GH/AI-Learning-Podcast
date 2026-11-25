@@ -1,111 +1,93 @@
-# Klöbels KI-News – Ausgabe 5 vom 04.11.2026
+# Klöbels KI-News – Ausgabe 5 vom 25.11.2026
 
-LENA: Du lässt Claude eine Kundenmail Korrektur lesen. Seit gestern trägt der Text womöglich ein unsichtbares Zeichen.
+LENA: Ab dem ersten Februar ändert Google die Regeln für KI-Agenten in Gmail, Drive und Kalender.
 
-TOM: Kein Sonderzeichen, kein Hinweis im Text. Ein Muster in der Wortwahl, das nur ein Prüfwerkzeug erkennt. Und seit Dienstag gilt das auch für ältere Claude-Modelle.
+TOM: Wer dann mit einem Agenten auf Workspace-Daten zugreift, soll dafür einen neuen, offiziellen Weg nehmen. Wer beim alten bleibt, bekommt laut mehreren Berichten engere Grenzen.
 
-LENA: Außerdem: ChatGPT legt Chat und Arbeit zusammen, Berichte über eine Datenschutz-Einstellung bei Codex, die sich von selbst wieder einschaltet, und Claude Code baut keine Spiele mehr nach.
+LENA: Außerdem: Google bringt Gemini vier Neon, ChatGPT bekommt ein neues Standardmodell, und bei Claude wird aus einem Artefakt eine eigene Desktop-App.
 
-TOM: Dazu eine Neuerung für lange laufende Agenten und ein Nachtrag zu Gemini.
+TOM: Und das Protokoll, über das Claude mit deinen Werkzeugen spricht, lernt ein paar wichtige neue Dinge.
 
-LENA: Das ist Klöbels KI-News vom Mittwoch, 4. November 2026. Ich bin Lena.
+LENA: Das ist Klöbels KI-News vom Mittwoch, 25. November 2026. Ich bin Lena.
 
-TOM: Und ich bin Tom. Wir schauen auf Montag und Dienstag. Eine Meldung reicht bis Samstag zurück, weil sie erst gestern wirksam wurde.
+TOM: Und ich bin Tom. Nach einer längeren Pause schauen wir heute auf die letzte Woche, also auf die Zeit seit Mittwoch, dem achtzehnten November.
 
-LENA: Dann fangen wir damit an. Was hat Anthropic gemacht?
+LENA: Dann fangen wir mit Google Workspace an. Was ist da passiert?
 
-TOM: Anthropic markiert die Texte, die Claude schreibt, mit einem unsichtbaren Wasserzeichen. Das ist an sich nicht neu. Seit August haben alle Claude-Modelle, die nach dem zweiten August erschienen sind, dieses Wasserzeichen von Anfang an, also zum Beispiel Claude Opus fünf Punkt fünf. Neu ist: Am Samstag, dem einunddreißigsten Oktober, hat Anthropic seine API-Kunden per Mail informiert, dass ab dem dritten November auch vier ältere Modelle markiert werden. Das sind Claude Mythos fünf, Claude Opus vier Punkt sieben, Claude Opus vier Punkt sechs und Claude Sonnet vier Punkt sechs. Berichtet haben unter anderem The Decoder und Gigazine.
+TOM: Google hat am Dienstag, dem vierundzwanzigsten November, seine MCP-Server für Workspace allgemein freigegeben. MCP ist das Model Context Protocol, also die gemeinsame Sprache, über die KI-Assistenten mit anderen Diensten reden. Freigegeben sind acht solcher Server: für Gmail, Drive, Docs, Tabellen, Präsentationen, Kalender, Chat und Aufgaben. Dazu kommt ein offizielles Kommandozeilen-Werkzeug. Das steht im Workspace-Blog von Google und wird von mehreren Fachseiten übereinstimmend berichtet.
 
-LENA: Wie funktioniert so ein Wasserzeichen in einem Text?
+LENA: Und was hat es mit dem ersten Februar auf sich?
 
-TOM: Laut Anthropic ist es ein nicht wahrnehmbares Muster in der Wortwahl. Das Modell wählt zwischen ähnlich passenden Wörtern nach einem bestimmten Schlüssel aus. Es kommen keine zusätzlichen Zeichen dazu, der Preis ändert sich nicht, und laut Anthropic steckt im Wasserzeichen nichts über dich, deine Firma oder deine Unterhaltung. Das Verfahren ist eine Abwandlung von SynthID, das Google bei Gemini nutzt.
+TOM: Ab dem ersten Februar zweitausendsiebenundzwanzig sollen KI-Agenten über diese MCP-Server oder das Kommandozeilen-Werkzeug auf Workspace-Daten zugreifen. Also nicht mehr über die klassischen Programmierschnittstellen, die bisher jede Automatisierung genutzt hat. Wie hart das durchgesetzt wird, beschreiben die Berichte unterschiedlich. Zwei Quellen schreiben, dass Agenten, die weiter den alten Weg nehmen, auf die Grenzen der kostenlosen Stufe gesetzt werden. Eine andere schreibt, der alte Weg funktioniere für Agenten dann gar nicht mehr. Für normale Apps, die ein Mensch bedient, ändert sich laut den Berichten nichts.
 
-LENA: Und wo greift das? Nur bei der Schnittstelle?
+LENA: Du hast gerade von einer kostenlosen Stufe gesprochen. Kostet das jetzt Geld?
 
-TOM: Nein. Das Wasserzeichen sitzt im Modell selbst. Es steckt also in Texten aus der Claude-App, aus Claude Code, aus Cowork, aus der Schnittstelle und auch bei Claude über Amazon, Google Cloud oder Microsoft. Bei Amazon Bedrock kann es laut der Mail ein paar Tage länger dauern. Abschalten kann man es als Kunde nicht.
-
-LENA: Gibt es Ausnahmen?
-
-TOM: Eine, und die ist interessant. Bei Opus vier Punkt sechs und Sonnet vier Punkt sechs greift das Wasserzeichen nur, wenn die Einstellungen für die Zufälligkeit der Wortwahl auf dem Standardwert bleiben. Wer einen dieser Werte ändert, bekommt unmarkierten Text. Anthropic weist selbst darauf hin. Für Mythos fünf und Opus vier Punkt sieben nennt die Mail diese Einschränkung nicht.
-
-LENA: Warum macht Anthropic das überhaupt?
-
-TOM: Wegen des europäischen KI-Gesetzes, des AI Act. Anthropic hat einen Verhaltenskodex der EU zur Kennzeichnung von KI-Inhalten unterschrieben, und für die Kennzeichnungspflicht läuft im Dezember eine Frist ab. Anthropic setzt das Wasserzeichen aber weltweit ein. Prüfen kann man es übrigens noch nicht frei. Es gibt eine Schnittstelle zur Erkennung, aber nur als geschlossene Vorschau für ausgewählte Organisationen, etwa Behörden, Medien und Forschung.
+TOM: Es gibt zwei Stufen. Die Standard-Stufe ist kostenlos und braucht kein Abrechnungskonto. Genannt werden fünftausend Anfragen pro Tag, wobei die Quellen sich nicht einig sind, ob das pro Produkt oder pro Projekt gilt. Wer mehr braucht, nimmt die Stufe für hohe Last. Die wird ab dem ersten April zweitausendsiebenundzwanzig abgerechnet. Google selbst sagt, dass über neunundneunzig Prozent der aktiven Entwickler in der kostenlosen Stufe bleiben. Für Administratoren gibt es neue Einstellungen in der Admin-Konsole, dazu Prüfprotokolle und Rückfragen, bevor ein Agent zum Beispiel Mails verschickt oder Dateien löscht.
 
 LENA: Und was heißt das für die Praxis?
 
-TOM: Für dich zwei Dinge. Erstens: Auch ein Text, den du selbst geschrieben hast und von Claude nur glätten oder übersetzen lässt, kann danach das Muster tragen. Anthropic sagt dazu, das bedeute dann nur, dass Claude den Text bearbeitet hat, nicht, dass Claude ihn erfunden hat. Wenn ein Kunde vertraglich keine KI-Texte will, solltest du das im Blick haben. Zweitens: Für Produkttexte, Newsletter oder Kundenmails ändert sich im Alltag nichts. Der Text liest sich gleich. Aber du solltest davon ausgehen, dass KI-Texte künftig erkennbar sind, bei Claude, bei Gemini und teilweise bei OpenAI. Offen damit umzugehen ist der sicherere Weg, als darauf zu hoffen, dass es niemand merkt.
+TOM: Für dich als Berater ist das vor allem eine Frage für deine Kunden. Viele Shops haben Automatisierungen, die Bestellungen in eine Google-Tabelle schreiben oder Kundenmails in Gmail sortieren. Solange das klassische Zapier-Abläufe sind, ist offen, ob Google sie überhaupt als Agenten zählt. Das sagen die Berichte nicht. Läuft aber ein KI-Agent mit Zugriff auf Gmail oder Drive, dann solltest du vor Februar prüfen, über welchen Weg er zugreift. Und für Kunden mit Workspace lohnt ein Blick in die neuen Admin-Einstellungen. Da lässt sich festlegen, welche externen KI-Werkzeuge überhaupt an die Daten dürfen.
 
-LENA: Zweites Thema, OpenAI. Was ändert sich bei ChatGPT?
+LENA: Bleiben wir bei MCP. Auch Anthropic hat das Protokoll erweitert.
 
-TOM: OpenAI legt in der Desktop-App von ChatGPT die beiden Bereiche Chat und Work zusammen. Das hat TechCrunch am Montag berichtet, gestützt auf eine Mail von OpenAI an die Nutzer. Bisher gab es zwei Reiter: einen zum Unterhalten und einen, in dem ChatGPT Aufgaben selbstständig abarbeitet, mit Dateien und Erweiterungen. Künftig soll man in einem Fenster vom Brainstorming direkt dazu übergehen, dass ChatGPT die Arbeit erledigt. Codex, der Programmierassistent, bleibt ein eigener Bereich.
+TOM: Genau, ebenfalls am vierundzwanzigsten November. Laut Anthropic gibt es inzwischen über zehntausend MCP-Verbindungen für Claude. Neu sind drei Dinge. Erstens: Aufgaben im Hintergrund. Ein Dienst kann jetzt eine lange Arbeit annehmen, sie im Hintergrund erledigen und sich melden, wenn sie fertig ist. Zweitens: Rückfragen. Fehlt dem Dienst eine Information, hält er an und fragt dich, statt zu raten. Beides ist jetzt allgemein verfügbar, zunächst für Pro, Max und Ultra, Team und Enterprise folgen nach und nach.
 
-LENA: Ab wann?
+LENA: Und das Dritte?
 
-TOM: Zuerst bekommt eine ausgewählte Gruppe die neue Ansicht, um Rückmeldungen zu sammeln. Ein Datum für alle nennt OpenAI nicht. Anthropic hat Chat und Cowork bei Claude laut TechCrunch schon im September zusammengelegt.
+TOM: Fähigkeiten über MCP, auf Englisch Skills. Ein Dienst liefert damit zu seinen Werkzeugen gleich die passenden Anleitungen mit, wie Claude damit arbeiten soll. Das ist eine offene Testphase. Bei Pro, Max und Ultra ist es von Anfang an eingeschaltet, bei Team muss ein Administrator es freigeben, Enterprise kommt später. Angekündigt, aber noch nicht da, ist das Hochladen von Dateien an solche Dienste, also etwa eine Tabelle oder ein PDF.
 
-LENA: Da war noch etwas mit den Nutzungsgrenzen.
+LENA: Und was bringt dir das konkret?
 
-TOM: Genau, und das ist der Teil, der mehr Leute betrifft. ChatGPT und Codex sollen künftig aus demselben Kontingent schöpfen. Laut TechRadar gilt das für die Tarife Plus, Pro und Business: eine gemeinsame Anzeige statt getrennter Zähler. Aufwendige Aufgaben verbrauchen mehr davon. Normale Chats mit dem schnellen Instant-Modell sollen nicht zählen. Wie groß das Kontingent ist, sagt OpenAI nicht. Laut TechRadar greift die Umstellung offenbar im Dezember. OpenAI selbst schreibt, die meisten Nutzer merkten nichts, manche müssten aber öfter warten, bis das Kontingent wieder aufgefüllt ist.
+TOM: Du nutzt Zapier über MCP mit Claude. Die Rückfragen sind dabei der interessanteste Teil. Bisher hat Claude bei unklaren Angaben oft einfach angenommen, welcher Kanal oder welche Tabelle gemeint ist. Wenn Anbieter wie Zapier die Rückfrage einbauen, kann der Dienst selbst nachhaken. Das macht Schreibaktionen sicherer. Die Hintergrundaufgaben helfen bei Dingen, die länger dauern, etwa einem großen Feed-Export. Ob und wann Zapier das unterstützt, ist aber noch nicht bekannt. Das solltest du in den nächsten Wochen beobachten.
 
-LENA: Die Reaktionen klingen nicht begeistert.
+LENA: Dann zu Claude selbst. Was ist mit den Artefakten?
 
-TOM: Nein. Ein Reddit-Beitrag dazu heißt übersetzt "Schlechteste Entscheidung aller Zeiten". Die Sorge dahinter: Wer im Plus-Tarif viel mit Codex arbeitet, hat danach weniger Spielraum für aufwendige Chats, und umgekehrt.
-
-LENA: Und was heißt das für die Praxis?
-
-TOM: Wenn du ChatGPT neben Claude nutzt, etwa für Recherchen oder zum Gegenprüfen, wirst du die Umstellung kaum merken, solange du vor allem chattest. Wenn du dort aber längere Aufgaben laufen lässt, Analysen mit Dateien oder Agenten-Aufgaben, dann achte im Dezember auf die neue Anzeige. Planbar ist so ein gemeinsamer Topf erst, wenn man weiß, wie schnell er sich leert. Das wirst du in den ersten Wochen selbst beobachten müssen.
-
-LENA: Bleiben wir bei OpenAI. Jetzt kommt eine Meldung, die wir ausdrücklich als unbestätigt kennzeichnen.
-
-TOM: Richtig. Auf Hacker News, einem Forum für Entwickler, berichtet ein Nutzer, dass bei seiner Firma die Einstellung "Das Modell für alle verbessern" plötzlich wieder eingeschaltet war. Das ist der Schalter, mit dem man festlegt, ob OpenAI die eigenen Chats zum Training verwenden darf. Das Team hatte ihn ausgeschaltet. Am Montag war er laut dem Beitrag wieder an, ohne dass jemand ihn angefasst hätte. Betroffen sei vor allem Codex.
-
-LENA: Ist das ein Einzelfall?
-
-TOM: Das ist unklar. Das brasilianische Portal Antihype hat die Diskussion zusammengefasst. Einige Nutzer bestätigen ähnliches, mindestens fünf andere sagen, bei ihnen sei alles aus geblieben. Eine Stellungnahme von OpenAI gibt es bisher nicht, also auch keine Aussage, ob das ein Fehler ist oder Absicht.
+TOM: Artefakte sind die kleinen Seiten und Werkzeuge, die Claude dir baut, etwa ein Rechner oder eine Übersicht. Die lassen sich jetzt als eigenständige Desktop-Apps für macOS und Windows installieren. Das berichtet The Decoder am vierundzwanzigsten November und beruft sich auf einen Beitrag von Felix Rieseberg aus dem Claude-Team. Die App kann dann im Dock liegen, eigene Einträge in der Menüleiste haben, Benachrichtigungen schicken und auf deine Verbindungen zugreifen. Das Ganze ist eine Testversion und braucht die aktuelle Claude-App. Laut dem Beitrag reicht dafür sogar ein kostenloses Konto.
 
 LENA: Und was heißt das für die Praxis?
 
-TOM: Kurz nachschauen kostet eine Minute. In ChatGPT unter Einstellungen, Datenkontrollen, steht der Schalter "Das Modell für alle verbessern". Bei privaten Konten, also Free, Plus und Pro, ist er ab Werk an. Bei Business, Enterprise und der Schnittstelle ist er ab Werk aus. Wenn du über ein privates Konto auch mal Kundendaten oder Auszüge aus Tracking-Analysen hineinkopierst, solltest du das prüfen. Wichtig: Das Ausschalten gilt nur für neue Unterhaltungen. Und auch bei ausgeschaltetem Training kann eine Bewertung mit Daumen hoch oder runter die ganze Unterhaltung für das Training freigeben. Für Kundendaten bleibt die Empfehlung: lieber ein Geschäftskonto, bei dem das Training grundsätzlich aus ist.
+TOM: Denk an die kleinen Helfer, die du dir ohnehin bauen lässt. Ein Rechner für Werbebudgets, eine Prüfliste für einen Feed-Import, eine Übersicht über offene Kundenfragen. Bisher lagen die im Browser oder irgendwo in einem alten Chat. Jetzt kannst du sie wie ein normales Programm starten. Mit Benachrichtigungen ließe sich zum Beispiel ein kleines Werkzeug bauen, das dich erinnert, wenn ein Wert über eine Grenze steigt. Weil es eine Testphase ist, würde ich damit aber noch keine Abläufe bauen, von denen ein Kunde abhängt.
 
-LENA: Drittes Thema. Claude Code baut keine Spiele mehr nach?
+LENA: Jetzt zu Google und dem neuen Modell.
 
-TOM: Zumindest keine bekannten. The Decoder hat gestern berichtet, dass Anthropic Claude Code daran hindert, bestehende Videospiele nachzubauen. Addy Osmani, der bei Anthropic arbeitet, hat auf X bestätigt, dass dafür zwei Sätze in die Grundanweisung von Claude Code eingefügt wurden. Die gilt auch, wenn man den Nachbau umbenennt. Eigene Spiele, Spiele eines bestimmten Genres oder Projekte mit selbst erstellten Grafiken sollen weiter gehen. Einige Nutzer berichten allerdings, dass auch eigene Projekte abgelehnt werden. Osmani sagt, Anthropic werde die Regeln weiter anpassen.
+TOM: Am achtzehnten November hat Google Gemini vier Neon vorgestellt. Das Modell liegt in der Gemini-vier-Familie zwischen dem großen Carbon und dem schnellen Hydrogen. Google beschreibt es als Modell für Programmierung, Wissensarbeit und wissenschaftliche Aufgaben. Es hat vier Stufen, wie lange es nachdenkt, voreingestellt ist die hohe Stufe. Das Kontextfenster fasst eine Million Token, also sehr viel Text auf einmal.
 
-LENA: Wie kam es dazu?
+LENA: Wo bekommt man es?
 
-TOM: In den letzten Wochen sind Hunderte inoffizielle Browser-Versionen bekannter Spiele aufgetaucht, gebaut mit Claude Opus fünf Punkt fünf und GPT sechs Astra. Anthropic verweist auf seine Nutzungsrichtlinien: Geistiges Eigentum zu verletzen ist dort ausdrücklich verboten.
+TOM: In der Gemini-App steht es für Abonnenten von Google AI Pro und Ultra in der Modellauswahl. Für Entwickler gibt es Gemini vier Neon über die Schnittstelle im bezahlten Tarif. Der Preis liegt bei drei Dollar pro Million Eingabe-Token und fünfzehn Dollar pro Million Ausgabe-Token. Wiederverwendete Eingaben aus dem Zwischenspeicher kosten nur fünfzehn Cent. Eine Einschränkung für Europa nennt Google in der Ankündigung nicht, ausdrücklich bestätigt wird Deutschland aber auch nicht.
 
-LENA: Spielst du nicht, betrifft dich das also nicht?
+LENA: Google nennt sicher auch Testergebnisse.
 
-TOM: Direkt nicht. Aber die Meldung zeigt etwas, das für jedes Werkzeug gilt: Anbieter können ihr Verhalten jederzeit über eine Änderung der Grundanweisung anpassen, ohne Ankündigung. Ein Ablauf, der heute klappt, kann morgen eine Absage bekommen. Und dazu passt eine zweite Meldung vom Montag: Die US-Bank Goldman Sachs hat laut Bloomberg den meisten Beschäftigten Claude Code und GitHub Copilot wieder weggenommen. Nur Entwickler dürfen die Werkzeuge noch nutzen, Händler und Banker nicht mehr. Die Bank nennt Produktivität und Risikomanagement als Gründe, mehr Details gibt es nicht.
-
-LENA: Und was heißt das für die Praxis?
-
-TOM: Zwei Dinge. Wenn du für Kunden Werkzeuge mit Claude Code baust, etwa ein kleines Skript, das Produktfeeds prüft, dann halte fest, wie es gebaut wurde und wie man es ohne KI weiterpflegt. Und wenn Kunden dich fragen, ob ihre Marketingleute selbst mit Programmierassistenten arbeiten sollen, ist Goldman ein gutes Beispiel: Ausprobieren ist leicht, der Betrieb im Alltag braucht klare Regeln, wer was darf.
-
-LENA: Viertes Thema, eher etwas für Entwickler. Message Threads bei Claude.
-
-TOM: Anthropic hat gestern Message Threads als öffentliche Beta auf der Claude-Plattform gestartet, berichtet The Decoder. Bisher schickt ein Agent bei jeder Anfrage den kompletten bisherigen Verlauf mit. Mit Message Threads schickt er nur das, was seit der letzten Nachricht neu ist. Der Verlauf bleibt verschlüsselt im Speicher und verfällt nach fünf Minuten ohne Aktivität. Laut Anthropic sinkt die Wartezeit bis zum ersten Wort um etwa fünfunddreißig Prozent, wenn der Verlauf sehr lang ist, also zwischen einer halben und einer Million Tokens. Die Kosten bleiben gleich, weil Claude den gesamten Verlauf weiterhin liest. Verfügbar ist das auf der Claude-Plattform sowie bei Amazon, Microsoft Foundry und Google Cloud.
+TOM: Viele. Ein Wert ist für dich interessant. Google gibt an, dass Gemini vier Neon im AutomationBench von Zapier sechsundfünfzig Komma drei Prozent erreicht. Dieser Test prüft, wie gut ein Modell Automatisierungsaufgaben über Zapier erledigt. Das sind Angaben von Google selbst, keine unabhängige Messung. Und der Wert heißt auch, dass gut vierzig Prozent der Aufgaben nicht gelingen.
 
 LENA: Und was heißt das für die Praxis?
 
-TOM: Für deine Zapier-Abläufe erst einmal nichts. Die schicken meist kurze Einzelanfragen. Spürbar wird es bei Agenten, die lange an einer Aufgabe arbeiten, etwa beim Programmieren oder bei vielen Dokumenten. Wenn du eigene Agenten über die Schnittstelle laufen lässt, lohnt ein Blick in die Dokumentation. Sparen tust du Zeit, aber kein Geld.
+TOM: Wenn du für Kunden mit Google Workspace arbeitest, ist Gemini vier Neon jetzt eine ernsthafte Option für längere Analysen, etwa große Exportdateien oder lange Mailverläufe. Der Preis liegt in der Größenordnung der großen Modelle von Anthropic und OpenAI, also kein Schnäppchen. Ein fairer Test wäre: dieselbe Aufgabe, zum Beispiel eine Fehleranalyse für einen Produktfeed, einmal mit Claude und einmal mit Gemini, und dann vergleichen. Die Zahl zeigt auch: Automatisierungen mit KI brauchen weiter deine Kontrolle.
 
-LENA: Und zum Schluss der Nachtrag zu Gemini.
+LENA: Bleibt OpenAI. Was ist dort neu?
 
-TOM: Der ist etwas älter. Google hat schon am neunundzwanzigsten Oktober angekündigt, dass Gemini Dokumente, PDFs, Präsentationen, Tabellen und Code direkt im Chat erstellen, anzeigen und bearbeiten kann. Breiter berichtet wurde darüber erst am Wochenende, unter anderem von Digital Trends. Du kannst eine Datei groß aufmachen, selbst etwas ändern oder einen Abschnitt markieren und Gemini bitten, nur diesen Teil umzuschreiben.
+TOM: Seit Montag, dem dreiundzwanzigsten November, gibt es im Chat-Bereich von ChatGPT ein neues Standardmodell. Das ist eine für Gespräche abgestimmte Fassung von GPT sechs Punkt zwei Sol. Sie wird laut OpenAI weltweit für Plus, Pro, Business und Enterprise verteilt. Bei Enterprise entscheidet der Administrator. Für den kostenlosen Tarif nennen die Berichte nichts.
 
-LENA: Für wen gilt das?
+LENA: Was soll besser sein?
 
-TOM: Laut Bericht für alle Nutzer in den Sprachen und Regionen, in denen es die Gemini-App gibt. Einen bestimmten Tarif nennt der Bericht nicht. PDFs gehen auf dem Handy und im Browser. Google-Dokumente, Tabellen, Präsentationen, Markdown und Code nur im Browser.
+TOM: Laut OpenAIs eigenen Tests vor allem zwei Dinge. Das Modell versteht Bilder genauer, in einem internen Test steigt der Wert von gut siebenundvierzig auf knapp zweiundsiebzig Prozent. Und es hält sich besser an schwierige Anweisungen, dort geht es von zweiundsechzig auf achtundsiebzig Prozent. Auch die Websuche soll genauer sein. Das gilt nur für den Chat-Bereich. Die Modelle hinter den Bereichen Arbeit und Codex bleiben gleich.
+
+LENA: Du hattest noch etwas zu den Dots, den dauerhaft laufenden Agenten von OpenAI.
+
+TOM: Ja, aber das ist noch nicht sauber bestätigt. Die Seite TestingCatalog berichtet, dass die Dots jetzt auch in der EU starten. Europa war beim ersten Start ausgenommen. Welche Tarife und welche Länder genau, steht dort nicht, und die offizielle Hilfeseite von OpenAI konnten wir nicht prüfen. Nimm das also als Hinweis, nicht als Tatsache.
 
 LENA: Und was heißt das für die Praxis?
 
-TOM: Wenn du einem Kunden eine Auswertung als PDF schickst, kannst du in Gemini jetzt einzelne Absätze gezielt nachbessern lassen, ohne alles neu zu erzeugen. Claude kann Ähnliches mit Dateien schon länger. Ein Test an einem echten Dokument zeigt, was dir besser liegt.
+TOM: Wenn du ChatGPT parallel zu Claude nutzt, etwa um Produktbilder zu prüfen oder Screenshots aus einem Tracking-Werkzeug auswerten zu lassen, lohnt ein neuer Versuch. Genau dafür ist die bessere Bildauswertung gedacht. Und die bessere Treue zu Anweisungen hilft bei Texten mit festen Vorgaben, etwa Produktbeschreibungen mit genauer Zeichenzahl. Bei den Dots würde ich abwarten, bis OpenAI die Verfügbarkeit in Deutschland selbst bestätigt.
 
-LENA: Worauf sollte man in den nächsten Tagen achten?
+LENA: Gab es sonst noch etwas, das du kennen solltest?
 
-TOM: Ob OpenAI sich zu den Berichten über die Trainings-Einstellung äußert. Wann die gemeinsame Ansicht von Chat und Work bei mehr Nutzern ankommt. Und im Dezember dann zwei Termine: das gemeinsame Kontingent bei ChatGPT und die EU-Frist zur Kennzeichnung von KI-Inhalten.
+TOM: Kurz zwei Dinge von Anthropic. Am dreiundzwanzigsten November kam Claude Ship als Testversion. Das sind Agenten, die Code-Änderungen auf GitHub prüfen und freigeben. Das gibt es nur für Team und Enterprise, und es wird nach Verbrauch abgerechnet. Für dich ist das eher etwas, falls ein Kunde ein eigenes Entwicklerteam hat. Und für Entwickler: Das ältere Modell Claude Opus vier Punkt fünf wird am zweiundzwanzigsten Januar in der Schnittstelle abgeschaltet. Falls irgendwo noch eine alte Automatisierung dieses Modell fest eingestellt hat, ist jetzt ein guter Zeitpunkt, sie umzustellen.
 
-LENA: Das waren Klöbels KI-News. Bis Freitag.
+LENA: Dann der Ausblick. Worauf solltest du achten?
+
+TOM: Drei Termine. Bis zum zweiundzwanzigsten Januar die Umstellung weg von Opus vier Punkt fünf, falls nötig. Bis zum ersten Februar die Frage, wie deine Agenten auf Google Workspace zugreifen. Und ab dem ersten April die Abrechnung der Workspace-Stufe für hohe Last. Dazu die Frage, wann Zapier die neuen MCP-Funktionen von Anthropic unterstützt.
+
+LENA: Das waren Klöbels KI-News. Bis Donnerstag.
+
+TOM: Bis Donnerstag.
