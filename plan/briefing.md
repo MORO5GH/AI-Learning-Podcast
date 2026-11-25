@@ -13,7 +13,7 @@ Beide duzen sich und den Hörer. Sie reden wie zwei Kollegen in der Kaffeeküche
 - Danach NUR Dialogzeilen, jede beginnt mit `MIRA: ` oder `JAN: `, zwischen den Zeilen eine Leerzeile. Nie zweimal hintereinander dieselbe Person: Sprecher immer abwechseln, sonst vertauscht die Vertonung die Stimmen. Keine Regieanweisungen, keine Zwischenüberschriften, kein Markdown, keine Aufzählungszeichen, keine Klammern mit Hinweisen.
 - Länge: 2.500 bis 2.800 Wörter (prüfe mit `wc -w`). Das ergibt bei normaler Sprechgeschwindigkeit ca. 15 Minuten Audio (Andres Wunsch: nicht länger).
 - Einzelne Redebeiträge höchstens ca. 120 Wörter, meist kürzer. Echtes Hin und Her, Nachfragen, kurze Reaktionen ("Okay, das ist ein gutes Beispiel.").
-- Ablauf: kurze Begrüßung (Mira stellt das Thema vor, ein Satz Rückbezug auf die letzte Folge) → Hauptteil in 4–6 Abschnitten mit konkreten Beispielen → kurze mündliche Zusammenfassung der Kernpunkte (als Merksätze, die man beim Gehen behält) → "Übung für heute" (konkret, in 5–15 Minuten machbar, am selben Tag) → Ausblick auf die nächste Folge → Verabschiedung "Bis morgen beim Klöbels KI-Podcast."
+- Ablauf: kurze Begrüßung (Mira stellt das Thema vor, ein Satz Rückbezug auf die letzte Folge) → Hauptteil in 4–6 Abschnitten mit konkreten Beispielen → kurze mündliche Zusammenfassung der Kernpunkte (als Merksätze, die man beim Gehen behält) → "Übung für heute" (konkret, in 5–15 Minuten machbar, am selben Tag) → Ausblick auf die nächste Folge → Verabschiedung "Bis nächsten Mittwoch beim Klöbels KI-Podcast."
 
 ## Für das Ohr schreiben
 - Kurze Sätze. Keine Tabellen, keine Listen mit mehr als drei Punkten am Stück, keine Zahlenkolonnen.
