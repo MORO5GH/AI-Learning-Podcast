@@ -22,6 +22,9 @@
   .alt { font-size:14px; color:var(--muted); }
   code { display:block; word-break:break-all; background:rgba(255,255,255,.08); padding:10px; border-radius:8px;
          margin:8px 0 0; font-size:13px; color:var(--text); }
+  a.btn2 { background:transparent; color:var(--text); border:2px solid var(--accent); }
+  .is-ios .android, .is-android .ios { display:none; }
+  .hint { font-size:13px; color:var(--muted); margin:-4px 0 14px; }
   button { margin-top:10px; background:none; border:1px solid var(--muted); color:var(--text); border-radius:8px;
            padding:8px 14px; font-size:14px; }
 </style>
@@ -31,10 +34,12 @@
   <section class="card">
     <img class="cover" src="cover-kloebels-ki-podcast.jpg" alt="Klöbels KI-Podcast">
     <h1>Klöbels KI-Podcast</h1>
-    <p>Der Lern-Podcast: dienstags, donnerstags und samstags eine Folge zu Prompting, KI-Tools und Agenten.</p>
-    <a class="btn" href="podcast://moro5gh.github.io/AI-Learning-Podcast/feed.xml">In Apple Podcasts abonnieren</a>
+    <p>Der Lern-Podcast: jeden Mittwoch eine Folge zu Prompting, KI-Tools und Agenten.</p>
+    <a class="btn ios" href="podcast://moro5gh.github.io/AI-Learning-Podcast/feed.xml">In Apple Podcasts abonnieren</a>
+    <a class="btn android" href="https://antennapod.org/deeplink/subscribe?url=https://moro5gh.github.io/AI-Learning-Podcast/feed.xml&amp;title=Kl%C3%B6bels+KI-Podcast">In AntennaPod abonnieren</a>
+    <a class="btn android btn2" href="https://pocketcasts.com/follow/https://moro5gh.github.io/AI-Learning-Podcast/feed.xml">In Pocket Casts abonnieren</a>
     <div class="alt">
-      Andere Podcast-App? Diese Feed-Adresse dort unter „Per URL hinzufügen“ einfügen:
+      Andere Podcast-App (z.&nbsp;B. Podcast Addict: <b>+</b> → „RSS-Feed hinzufügen“)? Diese Feed-Adresse dort einfügen:
       <code id="feed1">https://moro5gh.github.io/AI-Learning-Podcast/feed.xml</code>
       <button type="button" data-copy="feed1">Adresse kopieren</button>
     </div>
@@ -42,16 +47,21 @@
   <section class="card">
     <img class="cover" src="news/cover-kloebels-ki-news.jpg" alt="Klöbels KI-News">
     <h1>Klöbels KI-News</h1>
-    <p>Montags, mittwochs und freitags die wichtigsten Neuigkeiten rund um KI-Modelle, mit Einordnung für die Praxis.</p>
-    <a class="btn" href="podcast://moro5gh.github.io/AI-Learning-Podcast/news/feed.xml">In Apple Podcasts abonnieren</a>
+    <p>Montags und donnerstags die wichtigsten Neuigkeiten rund um KI-Modelle, mit Einordnung für die Praxis.</p>
+    <a class="btn ios" href="podcast://moro5gh.github.io/AI-Learning-Podcast/news/feed.xml">In Apple Podcasts abonnieren</a>
+    <a class="btn android" href="https://antennapod.org/deeplink/subscribe?url=https://moro5gh.github.io/AI-Learning-Podcast/news/feed.xml&amp;title=Kl%C3%B6bels+KI-News">In AntennaPod abonnieren</a>
+    <a class="btn android btn2" href="https://pocketcasts.com/follow/https://moro5gh.github.io/AI-Learning-Podcast/news/feed.xml">In Pocket Casts abonnieren</a>
     <div class="alt">
-      Andere Podcast-App? Diese Feed-Adresse dort unter „Per URL hinzufügen“ einfügen:
+      Andere Podcast-App (z.&nbsp;B. Podcast Addict: <b>+</b> → „RSS-Feed hinzufügen“)? Diese Feed-Adresse dort einfügen:
       <code id="feed2">https://moro5gh.github.io/AI-Learning-Podcast/news/feed.xml</code>
       <button type="button" data-copy="feed2">Adresse kopieren</button>
     </div>
   </section>
 </main>
 <script>
+  var ua = navigator.userAgent || "";
+  if (/android/i.test(ua)) document.documentElement.classList.add("is-android");
+  else if (/iphone|ipad|ipod|macintosh/i.test(ua) && "ontouchend" in document || /iphone|ipad|ipod/i.test(ua)) document.documentElement.classList.add("is-ios");
   document.querySelectorAll('button[data-copy]').forEach(function (b) {
     b.addEventListener('click', function () {
       var t = document.getElementById(b.getAttribute('data-copy')).textContent;
