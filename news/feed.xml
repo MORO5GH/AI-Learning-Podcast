@@ -11,6 +11,23 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>Ausgabe 6 vom 26.11.: Neue ChatGPT-Adressen vor dem Black Friday, gemeinsame Nutzungsgrenzen in ChatGPT, Cloudflare-Suche für KI-Agenten</title>
+      <description>OpenAI erweitert still die Adressliste für ChatGPT-Besuche auf Webseiten, ChatGPT legt Chat und Arbeit unter ein Nutzungskonto, Cloudflare macht Webseiten für KI-Agenten durchsuchbar, Gemini trennt die Einstellungen fürs Training, dazu Tabellen in Google Chat und Lernkarten in Gemini Notebook.
+Quellen:
+Über 2.000 neue ChatGPT-Adressen (PPC Land): https://ppc.land/openai-adds-over-2-000-internet-addresses-chatgpt-uses-to-visit-websites/
+Chat und Work mit gemeinsamen Grenzen (TechCrunch): https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/
+Search for Agents (Cloudflare Changelog): https://developers.cloudflare.com/changelog/post/2026-11-25-search-for-agents/
+Gemini-Aktivität mit getrennten Trainingseinstellungen (Jetstream): https://jetstream.blog/en/gemini-myactivity-renewal-november-2026/
+Tabellen und Überschriften in Google Chat (Google Workspace Updates): http://workspaceupdates.googleblog.com/2026/11/make-messages-in-google-chat-from-apps-and-agents-easier-to-read-with-tables-and-headings.html
+Lernkarten in Gemini Notebook (Google Workspace Updates): http://workspaceupdates.googleblog.com/2026/11/new-study-enhancements-for-flashcards-in-Gemini-Notebook.html
+GPT-6 und weitere Modelle in ChatGPT (OpenAI-Hilfe): https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt</description>
+      <enclosure url="https://moro5gh.github.io/AI-Learning-Podcast/news/episodes/ausgabe-006.mp3" length="4597247" type="audio/mpeg"/>
+      <guid isPermaLink="false">kloebels-ki-news-006</guid>
+      <pubDate>Thu, 26 Nov 2026 05:30:15 +0100</pubDate>
+      <itunes:duration>00:09:34</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+    </item>
+    <item>
       <title>Ausgabe 5 vom 25.11.: Google Workspace verlangt MCP für KI-Agenten, Gemini 4 Neon, neues Standardmodell in ChatGPT</title>
       <description>Google gibt seine Workspace-MCP-Server frei und stellt KI-Agenten ab Februar auf diesen Weg um, Anthropic erweitert MCP um Hintergrundaufgaben, Rückfragen und Skills, Claude-Artefakte werden zu Desktop-Apps, Google bringt Gemini 4 Neon, und ChatGPT erhält GPT-6.2 Sol als neues Chat-Modell.
 Quellen:
